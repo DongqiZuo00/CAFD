@@ -1,0 +1,42 @@
+version: CAFD-v1-teacher-capacity
+protocol: teacher_capacity_v1_chat_verified_sft
+seed: 2027
+experiment:
+  run_id: teacher_capacity_v1
+benchmark:
+  name: DELTA Manufactoria-HAS
+  development_size: 64
+  metric: full-pass/pass@1
+models:
+  teacher:
+    id: Qwen/Qwen3-4B-Instruct-2507
+    revision: cdbee75f17c01a7cc42f958dc650907174af0554
+  student:
+    id: Qwen/Qwen3-1.7B
+    revision: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
+  dtype: bfloat16
+  full_parameter: true
+  thinking: false
+generation:
+  contract: exactly_one_manufactoria_dsl_code_block
+  max_new_tokens: 2048
+  prompt_renderer: qwen3_instruct_no_thinking
+  thinking: false
+teacher_capacity:
+  source_verified_solutions: runs/cafd/experiments/chat_hier_v3/capacity/verified_train_solutions.jsonl
+  expected_verified_solutions: 678
+  updates: 400
+  learning_rate: 1.0e-5
+  global_batch_size: 32
+  eval_interval: 25
+  checkpoint_interval: 25
+  success_correct: 52
+  success_total: 64
+slurm:
+  account: du.j
+  partition: hpg-b200
+  qos: du.j
+  gpus: 4
+  cpus: 32
+  memory: 192G
+  time: 1-00:00:00

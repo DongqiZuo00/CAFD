@@ -1,0 +1,55 @@
+version: CAFD-v1-full-acquisition-route
+protocol: cafd_only_v5_full_route
+seed: 2027
+experiment:
+  run_id: cafd_only_v5_full_route
+benchmark:
+  name: DELTA Manufactoria-HAS
+  development_size: 64
+  metric: development full-pass/pass@1
+models:
+  teacher:
+    id: Qwen/Qwen3-4B-Instruct-2507
+    revision: cdbee75f17c01a7cc42f958dc650907174af0554
+  student:
+    id: Qwen/Qwen3-1.7B
+    revision: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
+  dtype: bfloat16
+  full_parameter: true
+  thinking: false
+generation:
+  contract: exactly_one_manufactoria_dsl_code_block
+  max_new_tokens: 2048
+  prompt_renderer: qwen3_instruct_no_thinking
+  thinking: false
+student:
+  updates: 200
+  prompts_per_update: 4
+  rollouts_per_prompt: 8
+  temperature: 1.0
+  top_p: 0.95
+  milestones: [0, 10, 40, 80, 120, 160, 200]
+  learning_rate: 1.0e-6
+  direct_reward_mode: hierarchical
+cafd:
+  phase_updates: 40
+  route: raw_to_sft25_then_rl
+  gamma: 1.0
+  temperature: 1.0
+  token_block_size: 64
+  bootstrap_gate:
+    update: 10
+    minimum_contract_valid: 1
+    minimum_parse_or_better: 1
+    minimum_eos_terminated: 1
+    maximum_token_limit_rate: 0.95
+    minimum_loss: 1.0e-8
+    minimum_gradient_norm: 1.0e-8
+slurm:
+  account: du.j
+  partition: hpg-b200
+  qos: du.j
+  gpus: 1
+  cpus: 8
+  memory: 64G
+  time: 1-00:00:00

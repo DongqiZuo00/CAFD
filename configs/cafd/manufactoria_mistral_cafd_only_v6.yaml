@@ -1,0 +1,103 @@
+version: CAFD-v1-mistral-only
+protocol: mistral_cafd_only_v6
+seed: 2027
+experiment:
+  run_id: mistral_cafd_only_v6
+benchmark:
+  name: DELTA Manufactoria-HAS
+  development_size: 64
+  metric: development full-pass/pass@1
+models:
+  teacher:
+    id: mistralai/Ministral-3-8B-Instruct-2512-BF16
+    revision: f6fae9795746f63c9be8344932f01275f3c63734
+  student:
+    id: mistralai/Ministral-3-3B-Instruct-2512-BF16
+    revision: b6d637bef2393152b3da2b2fde72eecdee30557e
+  dtype: bfloat16
+  full_parameter: true
+generation:
+  contract: exactly_one_manufactoria_dsl_code_block
+  max_new_tokens: 2048
+  prompt_renderer: ministral3_instruct_fixed_system
+reward:
+  mode: hierarchical
+  invalid_format: 0.0
+  format_only: 0.05
+  parse_only: 0.10
+  partial_pass: 0.10 + 0.90 * pass_rate
+  full_pass: 1.0
+capacity:
+  updates: 400
+  learning_rate: 1.0e-5
+  global_batch_size: 32
+  eval_interval: 25
+  checkpoint_interval: 25
+  success_correct: 52
+teacher_capacity:
+  source_verified_solutions: runs/cafd/experiments/mistral_cafd_only_v6/capacity/verified_train_solutions.jsonl
+  expected_verified_solutions: 678
+  updates: 400
+  learning_rate: 1.0e-5
+  global_batch_size: 32
+  eval_interval: 25
+  checkpoint_interval: 25
+  success_correct: 52
+  success_total: 64
+warmstart_gate:
+  prompts: 4
+  rollouts_per_prompt: 8
+  minimum_development_correct: 52
+  minimum_format_or_better: 1
+  minimum_parse_or_better: 1
+  minimum_partial_or_better: 1
+  minimum_positive_reward_rollouts: 1
+  minimum_variable_reward_groups: 1
+  maximum_token_limit_rate: 0.25
+teacher_route:
+  initial_checkpoint: runs/cafd/experiments/mistral_cafd_only_v6/teacher_capacity/selected
+  initialization_label: Mistral Teacher verified-SFT warm-start
+  updates: 1000
+  minimum_updates: 100
+  reward_mode: hierarchical
+  max_consecutive_zero_variance_updates: 20
+  learning_rate: 5.0e-7
+  prompts_per_update: 4
+  rollouts_per_prompt: 8
+  max_prompt_length: 2048
+  temperature: 1.0
+  top_p: 1.0
+  eval_interval: 50
+  checkpoint_interval: 20
+  success_correct: 52
+  success_consecutive: 2
+  wall_time_seconds: 604800
+student:
+  updates: 200
+  prompts_per_update: 4
+  rollouts_per_prompt: 8
+  temperature: 1.0
+  top_p: 0.95
+  milestones: [0, 10, 40, 80, 120, 160, 200]
+  learning_rate: 1.0e-6
+  direct_reward_mode: hierarchical
+cafd:
+  phase_updates: 40
+  route: raw_instruct_to_verified_sft_to_rl_six_checkpoint
+  gamma: 1.0
+  temperature: 1.0
+  token_block_size: 64
+  bootstrap_gate:
+    update: 10
+    minimum_contract_valid: 1
+    minimum_parse_or_better: 1
+    minimum_eos_terminated: 1
+    maximum_token_limit_rate: 0.95
+    minimum_loss: 1.0e-8
+    minimum_gradient_norm: 1.0e-8
+slurm:
+  account: du.j
+  partition: hpg-b200
+  qos: du.j
+  maximum_gpus: 4
+  maximum_memory: 192G

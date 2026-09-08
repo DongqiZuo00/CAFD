@@ -1,0 +1,110 @@
+schema_version: 1
+jobs:
+  cpu_gates:
+    state: RUNNING
+    slurm_job_id: "40316965"
+    partition: hpg-default
+    gpus: 0
+    cpus: 16
+    memory_gb: 96
+    time: "08:00:00"
+    script: scripts/gap_validation/slurm/cpu_gates.sbatch
+    dependencies: []
+  hardware_probe:
+    state: RUNNING
+    slurm_job_id: "40316966"
+    partition: hpg-b200
+    gpus: 4
+    cpus: 56
+    memory_gb: 256
+    time: "00:20:00"
+    script: scripts/gap_validation/slurm/hardware_probe.sbatch
+    dependencies: []
+  qwen_math_teacher:
+    state: RUNNING
+    slurm_job_id: "40319425"
+    retry_count: 3
+    resource_relaunch_count: 1
+    resource_relaunch_startup_retries: 1
+    partition: hpg-b200
+    gpus: 4
+    cpus: 56
+    memory_gb: 1024
+    time: "3-00:00:00"
+    script: scripts/gap_validation/slurm/qwen_math_teacher.sbatch
+    dependencies: [cpu_gates, hardware_probe]
+  qwen_math_teacher_responses:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: large_scale_teacher_response_generation_excluded
+    gpus: 4
+    partition: hpg-b200
+    cpus: 56
+    memory_gb: 512
+    time: "3-00:00:00"
+    script: scripts/gap_validation/slurm/qwen_math_teacher_responses.sbatch
+    dependencies: [qwen_math_teacher]
+  qwen_code_teacher:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: other_benchmark_and_backbone_excluded
+    blocker: HF_GATED_LIVECODEBENCH_PRO
+    dependencies: [cpu_gates, hardware_probe]
+  gemma_code_teacher:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: other_benchmark_and_backbone_excluded
+    blocker: HF_GATED_GEMMA_AND_LIVECODEBENCH_PRO
+    dependencies: [cpu_gates, hardware_probe]
+  mixtral_code_teacher:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: other_benchmark_and_backbone_excluded
+    blocker: HF_GATED_LIVECODEBENCH_PRO
+    dependencies: [qwen_code_teacher, gemma_code_teacher]
+  qwen_math_capacity_control:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: replaced_by_minimal_adaptive_oracle_overlay
+    gpus: 1
+    partition: hpg-b200
+    cpus: 14
+    memory_gb: 256
+    time: "3-00:00:00"
+    script: scripts/gap_validation/slurm/qwen_math_capacity_control.sbatch
+    dependencies: [qwen_math_teacher_responses]
+  qwen_math_direct_rlvr:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: replaced_by_fixed_lr_minimal_overlay
+    gpus: 1
+    partition: hpg-b200
+    cpus: 14
+    memory_gb: 256
+    time: "3-00:00:00"
+    script: scripts/gap_validation/slurm/qwen_math_direct_rlvr.sbatch
+    dependencies: [qwen_math_teacher]
+  qwen_math_teacher_rft:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: method_excluded
+    gpus: 1
+    partition: hpg-b200
+    cpus: 14
+    memory_gb: 256
+    time: "3-00:00:00"
+    script: scripts/gap_validation/slurm/qwen_math_teacher_rft.sbatch
+    dependencies: [qwen_math_teacher_responses]
+  qwen_math_endpoint_gkd:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: replaced_by_fixed_lr_minimal_overlay
+    gpus: 1
+    partition: hpg-b200
+    cpus: 14
+    memory_gb: 384
+    time: "3-00:00:00"
+    script: scripts/gap_validation/slurm/qwen_math_endpoint_gkd.sbatch
+    dependencies: [qwen_math_teacher]
+  qwen_math_progressive_gkd:
+    state: DEFERRED_BY_SCOPE_REDUCTION
+    deferred_reason: method_excluded
+    gpus: 1
+    partition: hpg-b200
+    cpus: 14
+    memory_gb: 384
+    time: "3-00:00:00"
+    script: scripts/gap_validation/slurm/qwen_math_progressive_gkd.sbatch
+    dependencies: [qwen_math_teacher]

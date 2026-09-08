@@ -1,0 +1,51 @@
+schema_version: 1
+seed: 42
+code:
+  dataset: open-r1/verifiable-coding-problems-python_decontaminated-tested
+  revision: 77ace849f7cc8f10d23945c748f9ff464427f83b
+  config: default
+  source_split: train
+  id_field: problem_id
+  prompt_field: problem
+  solution_field: gold_standard_solution
+  requirements:
+    language: python
+    task_type: verifiable_code
+    executable_tests: true
+    reference_solution_passes: true
+  split:
+    train: 0.95
+    internal_validation: 0.05
+math:
+  dataset: open-r1/DAPO-Math-17k-Processed
+  revision: 31dd309567e3da778038cc87d868b6097a3ccf68
+  config: en
+  source_split: train
+  id_field: extra_info.index
+  prompt_field: prompt
+  solution_field: solution
+  normalize_and_deduplicate: true
+  split:
+    train: 0.90
+    internal_validation: 0.10
+leakage_audit:
+  exact_id: true
+  exact_url: true
+  normalized_prompt_exact: true
+  minhash:
+    enabled: true
+    ngram_size: 8
+    num_perm: 256
+    threshold: 0.80
+  reference_solution_overlap: true
+  remove_matches: true
+  targets:
+    - livecodebench_pro_development
+    - livecodebench_pro_final_test
+    - olymmath_development
+    - olymmath_final_test
+    - olymmath_hard
+    - aime_2025_i
+    - aime_2025_ii
+    - mbpp_plus
+

@@ -1,0 +1,66 @@
+schema_version: 1
+run_id: qwen_olymmath_easy_minimal_gap_seed42_20260826
+status: ACTIVE_LEGACY_PROBE
+scope:
+  benchmark: olymmath_english_easy
+  allowed_conditions: [teacher_t0, teacher_t400, student_s0, student_oracle, student_direct_rlvr, student_final_opd]
+  deferred:
+    - progressive_gkd
+    - teacher_response_fine_tuning
+    - cafd
+    - cafd_ablations
+    - additional_seeds
+    - additional_lr_sweeps
+    - other_benchmarks
+    - other_backbones
+    - large_scale_teacher_response_generation
+frozen:
+  seed: 42
+  teacher: {id: Qwen/Qwen3.5-9B, revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a}
+  student: {id: Qwen/Qwen3.5-2B, revision: 15852e8c16360a2fea060d615a32b45270f8a8fc}
+  benchmark_revision: 94e19ffb8b7b7abe0f10f0015620c2e1eb57bf67
+  development_problems: 21
+  final_problems: 79
+  metric: exact_answer_accuracy
+  prompt_renderer: qwen35_thinking_v1
+  train_temperature: 1.0
+  train_top_p: 0.95
+  max_completion_tokens: 8192
+  prompts_per_update: 8
+  responses_per_prompt: 4
+  rollout_slots_per_update: 32
+active_teacher:
+  slurm_job_id: "40319425"
+  parent_pid: 3739690
+  torchrun_pid: 3739693
+  phase: lr_probe
+  learning_rate: 5.0e-7
+  probe_updates: 50
+  probe_output: runs/qwen_olymmath_easy/teacher/lr_probes/5e-07
+  formal_route_output: runs/qwen_olymmath_easy/teacher/selected_full_route
+  formal_route_learning_rate_rule: use_current_valid_probe
+  formal_route_updates: 400
+student:
+  direct_rlvr: {learning_rate: 1.0e-6, updates: 200, development_milestones: [0, 50, 100, 200]}
+  final_opd: {learning_rate: 2.0e-6, updates: 200, development_milestones: [0, 50, 100, 200]}
+  oracle:
+    learning_rate: 2.0e-6
+    initial_updates: 200
+    development_milestones: [0, 100, 200]
+    conditional_extensions: [400, 800]
+gates:
+  teacher_acquisition: T400_dev_correct > T0_dev_correct
+  direct_failure: Direct_dev_correct < T400_dev_correct
+  oracle_capacity: Oracle_dev_correct > S0_dev_correct
+  opd_start: teacher_acquisition and direct_failure and oracle_capacity
+  final_open: T400 > T0 and Oracle > S0 and Direct < min(T400, Oracle) and OPD < min(T400, Oracle)
+statistics:
+  paired_bootstrap_replicates: 10000
+  simultaneous_lower_percentile: 1.67
+  intervals: wilson_95
+audit:
+  frozen_config_sha256:
+    training_protocol: af80e3d1528ba4278bea1884e4f69083a47a6d7d9ad02c9659e944d42116e4a0
+    teacher_route: c6f4b6b4d07834e5e4b3ea86755774953da63262e00df51af96c6b07e21bacbe
+    train_grpo: 318c575235b10c1b170b616fd8b94e8ab89bfe4daa79c5014f0481408d8db5fc
+    teacher_sbatch: 71b2c945f214be49f6a7887055b3b7759816367779865dd5e9c00a75fdead920

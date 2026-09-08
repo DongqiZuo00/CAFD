@@ -1,0 +1,15 @@
+[submodule "vendor/open-r1"]
+	path = vendor/open-r1
+	url = https://github.com/huggingface/open-r1.git
+[submodule "vendor/trl"]
+	path = vendor/trl
+	url = https://github.com/huggingface/trl.git
+[submodule "vendor/OlymMATH"]
+	path = vendor/OlymMATH
+	url = https://github.com/RUCAIBox/OlymMATH.git
+[submodule "vendor/evalplus"]
+	path = vendor/evalplus
+	url = https://github.com/evalplus/evalplus.git
+[submodule "vendor/opencompass"]
+	path = vendor/opencompass
+	url = https://github.com/open-compass/opencompass.git

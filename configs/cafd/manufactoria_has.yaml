@@ -1,0 +1,92 @@
+version: CAFD-v1-compute-bounded
+protocol: compute_bounded_v3_chat_hierarchical
+seed: 2027
+experiment:
+  run_id: chat_hier_v3
+benchmark:
+  name: DELTA Manufactoria-HAS
+  official_repo: https://github.com/sunblaze-ucb/rl-grok-recipe
+  official_repo_revision: 8500bec984d4a84a4aa94ca3adc31c004aa6a388
+  train_dataset: manufactoria/has_train
+  train_revision: c4be8c1715810b7e5afd68869e23cf04e9dca7d6
+  test_dataset: manufactoria/has_test
+  test_revision: 13d4b794afe41f34ffed126c34faacf00c445349
+  development_size: 64
+  metric: full-pass/pass@1
+models:
+  teacher:
+    id: Qwen/Qwen3-4B-Instruct-2507
+    revision: cdbee75f17c01a7cc42f958dc650907174af0554
+  student:
+    id: Qwen/Qwen3-1.7B
+    revision: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
+  dtype: bfloat16
+  full_parameter: true
+  thinking: false
+threshold:
+  correct: 52
+  total: 64
+generation:
+  contract: exactly_one_manufactoria_dsl_code_block
+  canonical_token_threshold: 768
+  max_new_tokens: 2048
+  fallback_max_new_tokens: 2048
+  prompt_renderer: qwen3_instruct_no_thinking
+  thinking: false
+reward:
+  mode: hierarchical
+  invalid_format: 0.0
+  format_only: 0.05
+  parse_only: 0.10
+  partial_pass: 0.10 + 0.90 * pass_rate
+  full_pass: 1.0
+renderer_gate:
+  prompts: 8
+  rollouts_per_prompt: 8
+  minimum_variable_reward_groups: 1
+teacher_route:
+  updates: 1000
+  reward_mode: hierarchical
+  max_consecutive_zero_variance_updates: 20
+  learning_rate: 5.0e-7
+  prompts_per_update: 4
+  rollouts_per_prompt: 8
+  max_prompt_length: 2048
+  temperature: 1.0
+  top_p: 1.0
+  eval_interval: 50
+  checkpoint_interval: 20
+  success_correct: 52
+  success_consecutive: 2
+  wall_time_seconds: 604800
+capacity:
+  run_id: chat_hier_v3
+  updates: 400
+  learning_rate: 1.0e-5
+  global_batch_size: 32
+  eval_interval: 50
+  checkpoint_interval: 50
+  success_correct: 52
+student:
+  updates: 200
+  prompts_per_update: 4
+  rollouts_per_prompt: 8
+  temperature: 1.0
+  top_p: 0.95
+  milestones: [0, 40, 80, 120, 160, 200]
+  learning_rate: 1.0e-6
+  direct_reward_mode: hierarchical
+cafd:
+  phase_updates: 40
+  route: dynamic_six_checkpoint_teacher_trajectory
+  gamma: 1.0
+  temperature: 1.0
+  token_block_size: 64
+slurm:
+  account: du.j
+  partition: hpg-b200
+  qos: du.j
+  gpus: 4
+  cpus: 32
+  memory: 192G
+  time: 14-00:00:00

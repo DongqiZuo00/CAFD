@@ -1,0 +1,52 @@
+schema_version: 1
+primary:
+  livecodebench_pro_medium:
+    dataset: QAQAQAQAQ/LiveCodeBench-Pro
+    revision: null
+    testcase_dataset: QAQAQAQAQ/LiveCodeBench-Pro-Testcase
+    testcase_revision: 5257736c0a4e30ba0949d41c56a257c323d9c600
+    official_toolkit:
+      repository: open-compass/opencompass
+      revision: 20586a24844c5289155d658d641ee8c1e7f8fbf5
+    difficulty: medium
+    metric: pass@1
+    period_rule: two_latest_complete_nonoverlapping_periods
+    provisional_periods_from_official_release_listing:
+      development: quater_2025_4_6
+      final_test: quater_2025_7_9
+    status: DATA_CONTRACT_BLOCKED
+    blocker: HF_GATED_DATASET_NOT_AUTHORIZED
+  olymmath_english_easy:
+    repository: RUCAIBox/OlymMATH
+    revision: 94e19ffb8b7b7abe0f10f0015620c2e1eb57bf67
+    path: vendor/OlymMATH/data/OlymMATH-EN-EASY.jsonl
+    metric: exact_answer_accuracy
+    split:
+      seed: 42
+      stratify_by: subject
+      development_fraction: 0.20
+      final_test_fraction: 0.80
+    status: available
+auxiliary:
+  olymmath_english_hard:
+    repository: RUCAIBox/OlymMATH
+    revision: 94e19ffb8b7b7abe0f10f0015620c2e1eb57bf67
+    path: vendor/OlymMATH/data/OlymMATH-EN-HARD.jsonl
+    metric: exact_answer_accuracy
+    untouched: true
+  aime_2025_i:
+    metric: exact_answer_accuracy
+    untouched: true
+    revision: unresolved
+  aime_2025_ii:
+    metric: exact_answer_accuracy
+    untouched: true
+    revision: unresolved
+  mbpp_plus:
+    dataset: evalplus/mbppplus
+    revision: b2d74c91837c3f2a20c1299ae98133cbe7cfa077
+    toolkit_repository: evalplus/evalplus
+    toolkit_revision: 26d6d00bb1fd0fa37f39c99d5290da67891d1c5e
+    metric: pass@1
+    untouched: true
+

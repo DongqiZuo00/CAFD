@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: capability-gap-validation
+Version: 0.1.0
+Requires-Python: <3.13,>=3.11
+Requires-Dist: datasets==4.0.0
+Requires-Dist: transformers @ git+https://github.com/huggingface/transformers.git@36deb0b53ed0863f4b4dfdea23dcaec7f3df3701
+Requires-Dist: accelerate==1.10.1
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: jsonschema==4.25.1
+Requires-Dist: numpy==2.2.6
+Requires-Dist: pandas==2.3.2
+Requires-Dist: pyarrow==21.0.0
+Requires-Dist: scipy==1.16.1
+Requires-Dist: matplotlib==3.10.5
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: psutil==7.0.0
+Requires-Dist: requests==2.32.5
+Requires-Dist: datasketch==1.6.5
+Requires-Dist: math-verify==0.8.0
+Requires-Dist: latex2sympy2-extended==1.10.2
+Provides-Extra: test
+Requires-Dist: pytest==8.4.1; extra == "test"
+Requires-Dist: pytest-timeout==2.4.0; extra == "test"
+Provides-Extra: train
+Requires-Dist: deepspeed==0.17.5; extra == "train"

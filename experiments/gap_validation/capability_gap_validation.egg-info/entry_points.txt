@@ -1,0 +1,8 @@
+[console_scripts]
+gap-data = gap_validation.data:main
+gap-hardware = gap_validation.hardware:main
+gap-init = gap_validation.artifact_init:main
+gap-scheduler = gap_validation.scheduler:main
+gap-status = gap_validation.status:main
+gap-summarize = gap_validation.summarize:main
+gap-tokenizers = gap_validation.tokenizer_audit:main

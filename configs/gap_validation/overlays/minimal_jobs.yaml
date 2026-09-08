@@ -1,0 +1,38 @@
+schema_version: 1
+run_id: qwen_olymmath_easy_minimal_gap_seed42_20260826
+scheduler_mode: DRAIN_LEGACY_QUEUE
+jobs:
+  minimal_watcher:
+    state: PENDING
+    slurm_job_id: "40325943"
+    partition: hpg-default
+    gpus: 0
+    dependencies: [active_teacher]
+  active_teacher:
+    state: RUNNING
+    slurm_job_id: "40319425"
+    gpus: 4
+    phase: current_probe_then_fresh_t0_to_t400
+  teacher_development_evaluation:
+    state: PENDING
+    dependencies: [active_teacher]
+  student_base_development_evaluation:
+    state: PENDING
+    dependencies: [teacher_development_evaluation]
+  student_direct_rlvr:
+    state: PENDING
+    dependencies: [teacher_development_evaluation, student_base_development_evaluation]
+    gpus: 1
+  student_oracle:
+    state: PENDING
+    dependencies: [teacher_development_evaluation, student_base_development_evaluation]
+    gpus: 1
+  student_final_opd:
+    state: PENDING
+    dependencies: [student_direct_rlvr, student_oracle]
+    gate: teacher_acquisition_and_direct_failure_and_oracle_capacity
+    gpus: 1
+  frozen_final_evaluation:
+    state: PENDING
+    dependencies: [student_final_opd]
+    gate: preregistered_development_pattern

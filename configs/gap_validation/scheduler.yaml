@@ -1,0 +1,38 @@
+schema_version: 1
+workspace: /blue/du.j/jinjiaguo/CAFD
+partition: hpg-b200
+account: du.j
+qos: du.j
+seed: 42
+hard_gpu_ceiling: 4
+exclusive_gpu_locks: true
+allowed_layouts: ["4", "2+2", "2+1+1", "1+1+1+1"]
+resource_classes:
+  dense_teacher_2gpu: {gpus: 2, cpus: 28, memory_gb: 512}
+  dense_teacher_4gpu: {gpus: 4, cpus: 56, memory_gb: 1024}
+  teacher_response_4gpu: {gpus: 4, cpus: 56, memory_gb: 512}
+  dense_student_1gpu: {gpus: 1, cpus: 14, memory_gb: 256}
+  dense_gkd_1gpu: {gpus: 1, cpus: 14, memory_gb: 384}
+  dense_gkd_2gpu: {gpus: 2, cpus: 28, memory_gb: 768}
+  mixtral_teacher_4gpu: {gpus: 4, cpus: 56, memory_gb: 1600}
+  mixtral_gkd_2gpu: {gpus: 2, cpus: 28, memory_gb: 1200}
+states:
+  - PENDING
+  - RUNNING
+  - RETRYING
+  - COMPLETED
+  - FAILED
+  - RESOURCE_BLOCKED
+  - DATA_CONTRACT_BLOCKED
+  - INVALID_TOKENIZER_PAIR
+  - BUDGET_INVALID
+retry_policy:
+  max_retries: 3
+  oom_actions:
+    - lower_per_gpu_microbatch
+    - increase_gradient_accumulation_preserving_global_batch
+    - enable_activation_checkpointing
+    - lower_generation_concurrency
+    - serialize_teacher_scoring
+    - stronger_sharding
+    - cpu_offload_optimizer_state

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capability-gap-validation"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "datasets==4.0.0",
+  "transformers @ git+https://github.com/huggingface/transformers.git@36deb0b53ed0863f4b4dfdea23dcaec7f3df3701",
+  "accelerate==1.10.1",
+  "PyYAML==6.0.2",
+  "jsonschema==4.25.1",
+  "numpy==2.2.6",
+  "pandas==2.3.2",
+  "pyarrow==21.0.0",
+  "scipy==1.16.1",
+  "matplotlib==3.10.5",
+  "seaborn==0.13.2",
+  "psutil==7.0.0",
+  "requests==2.32.5",
+  "datasketch==1.6.5",
+  "math-verify==0.8.0",
+  "latex2sympy2-extended==1.10.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.1", "pytest-timeout==2.4.0"]
+train = ["deepspeed==0.17.5"]
+
+[project.scripts]
+gap-data = "gap_validation.data:main"
+gap-tokenizers = "gap_validation.tokenizer_audit:main"
+gap-hardware = "gap_validation.hardware:main"
+gap-scheduler = "gap_validation.scheduler:main"
+gap-status = "gap_validation.status:main"
+gap-summarize = "gap_validation.summarize:main"
+gap-init = "gap_validation.artifact_init:main"
+
+[tool.setuptools]
+package-dir = {"" = "experiments/gap_validation"}
+
+[tool.setuptools.packages.find]
+where = ["experiments/gap_validation"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/gap_validation"]
+addopts = "-ra"

@@ -1,0 +1,52 @@
+version: CAFD-v1-mistral-support-probe
+protocol: mistral_cafd_support_probe_v8
+seed: 2027
+experiment:
+  run_id: mistral_cafd_support_probe_v8
+benchmark:
+  name: DELTA Manufactoria-HAS
+  development_size: 64
+  metric: development full-pass/pass@1
+models:
+  teacher:
+    id: mistralai/Ministral-3-8B-Instruct-2512-BF16
+    revision: f6fae9795746f63c9be8344932f01275f3c63734
+  student:
+    id: mistralai/Ministral-3-3B-Instruct-2512-BF16
+    revision: b6d637bef2393152b3da2b2fde72eecdee30557e
+  dtype: bfloat16
+  full_parameter: true
+generation:
+  contract: exactly_one_manufactoria_dsl_code_block
+  max_new_tokens: 2048
+  prompt_renderer: ministral3_instruct_fixed_system
+student:
+  updates: 10
+  prompts_per_update: 4
+  rollouts_per_prompt: 8
+  temperature: 1.0
+  top_p: 0.95
+  milestones: [0, 10]
+  learning_rate: 1.0e-6
+  direct_reward_mode: hierarchical
+cafd:
+  phase_updates: 40
+  route: raw_instruct_to_verified_sft_to_rl_six_checkpoint
+  rollout_support: next_teacher_replay
+  gamma: 1.0
+  temperature: 1.0
+  token_block_size: 64
+  bootstrap_gate:
+    update: 10
+    minimum_contract_valid: 48
+    minimum_parse_or_better: 0
+    minimum_eos_terminated: 48
+    maximum_token_limit_rate: 0.25
+    minimum_loss: 1.0e-8
+    minimum_gradient_norm: 1.0e-8
+slurm:
+  account: du.j
+  partition: hpg-b200
+  qos: du.j
+  maximum_gpus: 4
+  maximum_memory: 192G

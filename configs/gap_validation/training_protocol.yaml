@@ -1,0 +1,85 @@
+schema_version: 1
+seed_list: [42]
+global:
+  optimizer: AdamW
+  optimizer_state_precision: fp32
+  scheduler: cosine
+  prompts_per_update: 8
+  responses_per_prompt: 4
+  rollout_slots_per_update: 32
+  train_temperature: 1.0
+  train_top_p: 0.95
+  train_top_k: 20
+  presence_penalty: 0.0
+  sampling_backend: transformers_generate
+  evaluation_decoding: deterministic_greedy_unless_officially_overridden
+  student_budget_optimizer_updates: 200
+  student_milestones: [0, 25, 50, 100, 150, 200]
+  code_max_completion_tokens: 4096
+  math_max_completion_tokens: 8192
+  selection: highest_development_official_metric_then_earliest_step
+teacher_grpo:
+  algorithm: GRPO
+  execution_override:
+    reason: user_requested_four_b200_relaunch
+    world_size: 4
+    prompts_per_device: 2
+    gradient_accumulation_steps: 1
+    prompts_per_update: 8
+  optimizer_updates: 400
+  route_snapshots: [0, 50, 100, 200, 300, 400]
+  endpoint: 400
+  learning_rate_candidates: [5.0e-7, 1.0e-6, 2.0e-6]
+  lr_probe_updates: 50
+  beta: 0.0
+  loss_type: dapo
+teacher_response_generation:
+  source: T400
+  seed: 42
+  deterministic_seed_scope: normalized_problem_id
+  num_shards: 4
+  responses_per_prompt: 8
+  required_verified_successes: 6400
+  merge_order: [stream_position, rollout_slot]
+direct_student_grpo:
+  algorithm: GRPO
+  optimizer_updates: 200
+  learning_rate_candidates: [5.0e-7, 1.0e-6, 2.0e-6]
+  lr_probe_updates: 50
+  beta: 0.0
+  loss_type: dapo
+teacher_rft:
+  optimizer_updates: 200
+  loss: completion_only_cross_entropy
+  learning_rate_candidates: [1.0e-6, 2.0e-6, 5.0e-6]
+  lr_probe_updates: 50
+endpoint_gkd:
+  optimizer_updates: 200
+  target: T400
+  on_policy_student_prefixes: true
+  divergence: exact_full_vocabulary_forward_kl
+  completion_positions_only: true
+  learning_rate_candidates: [1.0e-6, 2.0e-6, 5.0e-6]
+  lr_probe_updates: 50
+progressive_gkd:
+  optimizer_updates: 200
+  stages:
+    - {teacher: T50, updates: 40}
+    - {teacher: T100, updates: 40}
+    - {teacher: T200, updates: 40}
+    - {teacher: T300, updates: 40}
+    - {teacher: T400, updates: 40}
+  divergence: exact_full_vocabulary_forward_kl
+  completion_positions_only: true
+  learning_rate_candidates: [1.0e-6, 2.0e-6, 5.0e-6]
+  lr_probe_updates: 50
+capacity_control:
+  optimizer_updates: 800
+  milestones: [0, 100, 200, 400, 600, 800]
+  privileged_training_only_supervision: true
+  learning_rate_candidates: [1.0e-6, 2.0e-6, 5.0e-6]
+  lr_probe_updates: 50
+resume:
+  keep_full_resume_checkpoints: 2
+  route_snapshots_model_only_bf16: true
+  retry_limit: 3

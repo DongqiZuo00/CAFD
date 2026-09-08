@@ -1,0 +1,59 @@
+version: acquisition-observation-v11
+protocol: mistral_acquisition_observation_v11
+seed: 2027
+experiment:
+  run_id: mistral_progressive_gkd_observation_v11
+benchmark:
+  name: DELTA Manufactoria-HAS
+  development_size: 64
+  held_out_size: 132
+  metric: full-pass/pass@1
+models:
+  teacher:
+    id: mistralai/Ministral-3-8B-Instruct-2512-BF16
+    revision: f6fae9795746f63c9be8344932f01275f3c63734
+  student:
+    id: mistralai/Ministral-3-3B-Instruct-2512-BF16
+    revision: b6d637bef2393152b3da2b2fde72eecdee30557e
+  dtype: bfloat16
+  full_parameter: true
+generation:
+  contract: exactly_one_manufactoria_dsl_code_block
+  max_new_tokens: 2048
+  prompt_renderer: ministral3_instruct_fixed_system
+generalization:
+  fit_split: data/cafd/generalization_v10/fit.jsonl
+  fit_size: 614
+  selection_split: data/cafd/generalization_v10/selection.jsonl
+  selection_size: 64
+  confirmation_split: data/cafd/development.jsonl
+  confirmation_size: 64
+  frozen_test_accessed: false
+student:
+  updates: 200
+  prompts_per_update: 4
+  rollouts_per_prompt: 8
+  temperature: 1.0
+  top_p: 0.95
+  milestones: [0, 10, 40, 80, 120, 160, 200]
+  learning_rate: 1.0e-6
+  direct_reward_mode: hierarchical
+cafd:
+  phase_updates: 40
+  route: raw_instruct_to_verified_sft_to_rl_six_checkpoint
+  rollout_support: matched_teacher_student
+  teacher_rollouts_per_prompt_by_phase: [6, 4, 4, 2, 2]
+  target: absolute_next_teacher_checkpoint
+  objective: exact_full_vocabulary_forward_kl_on_completion_positions
+  temperature: 1.0
+  token_block_size: 64
+final:
+  freeze_after_development_selection: false
+  official_held_out_evaluations: 0
+  conditions: [progressive]
+slurm:
+  account: du.j
+  partition: hpg-b200
+  qos: du.j
+  maximum_gpus: 4
+  maximum_memory: 192G

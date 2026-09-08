@@ -1,0 +1,41 @@
+schema_version: 1
+seed: 42
+trainable_contract:
+  precision: bf16
+  policy_scope: full_text_policy_and_lm_head
+  freeze_unused_vision: true
+  quantization: forbidden
+  peft: forbidden
+pairs:
+  qwen:
+    teacher:
+      id: Qwen/Qwen3.5-9B
+      revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+    student:
+      id: Qwen/Qwen3.5-2B
+      revision: 15852e8c16360a2fea060d615a32b45270f8a8fc
+    prompt_renderer: qwen35_thinking_v1
+    thinking_mode: true
+    access: available
+  gemma:
+    teacher:
+      id: google/gemma-3-12b-it
+      revision: null
+    student:
+      id: google/gemma-3-4b-it
+      revision: null
+    prompt_renderer: gemma3_text_v1
+    thinking_mode: false
+    access: gated
+    blocker: HF_GATED_MODEL_NOT_AUTHORIZED
+  mistral:
+    teacher:
+      id: mistralai/Mixtral-8x7B-Instruct-v0.1
+      revision: eba92302a2861cdc0098cc54bc9f17cb2c47eb61
+    student:
+      id: mistralai/Mistral-7B-Instruct-v0.1
+      revision: ec5deb64f2c6e6fa90c1abf74a91d5c93a9669ca
+    prompt_renderer: mistral_instruct_v1
+    thinking_mode: false
+    access: available
+
