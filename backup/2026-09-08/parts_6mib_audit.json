@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "at": "2026-09-08T23:50:46.230690+00:00",
+  "chunk_size_bytes": 6291456,
+  "part_count": 62,
+  "first_part": {
+    "name": "working-records.tar.gz.part-0000",
+    "size_bytes": 6291456,
+    "sha256": "c865b3c16a893bf519bd80efd5b560c0a3d640d3d6945c699b5e79dab1fd8842",
+    "git_blob_sha": "d79e21b85a6d9104f2602e2f85b8ec24515b6761",
+    "offset": 0
+  },
+  "last_part": {
+    "name": "working-records.tar.gz.part-0061",
+    "size_bytes": 2476992,
+    "sha256": "8de09bdc0ac7d4d92c0c5ea3f650ff57e83fb17cd5c59ef9e4e586dd1a81736e",
+    "git_blob_sha": "502b6ff2b77b1573e05331f4b8bf324feb316ace",
+    "offset": 383778816
+  },
+  "archive_size_bytes": 386255808,
+  "archive_sha256": "3e2973a7560d6ba3e9b989c0379f3c7951e3fa59dbc0b8a678e951d76030e126",
+  "archive_stat_unchanged": true,
+  "source_manifest_sha256_unchanged": {
+    "source-files.jsonl": "8e89027c13007192e066f1ba4128a7916e10705aff2268d75d2d39b54b72356a",
+    "source-SHA256SUMS": "ba7359342f84ef0ceaeb0e7d8198fad72f79cfb9acce75be3bf882f7f6c6a165"
+  },
+  "parts_json_size_bytes": 16883,
+  "parts_json_sha256": "e5a6a6a6fb317490f533cd7054fffaf71e179f36cd1418d72714d6db368b0415",
+  "metadata_tree_entries_size_bytes": 5940662,
+  "metadata_tree_entries_sha256": "ad61e91f88837e9549138c4a4c86d1a24b441c30ad56f35a2cd7906905c5a5a4",
+  "metadata_parts_content_matches": true,
+  "other_metadata_entries_unchanged": true
+}

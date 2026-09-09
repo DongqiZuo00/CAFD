@@ -1,0 +1,16 @@
+clone_public_https
+verify_downloaded_chunks
+restore_repository_script
+verify_restored_files
+verified 1 of 9163
+verified 1001 of 9163
+verified 2001 of 9163
+verified 3001 of 9163
+verified 4001 of 9163
+verified 5001 of 9163
+verified 6001 of 9163
+verified 7001 of 9163
+verified 8001 of 9163
+verified 9001 of 9163
+verify_original_git_bundle
+{"status": "passed", "started_at": "2026-09-09T00:28:36.580086+00:00", "finished_at": "2026-09-09T00:31:14.320136+00:00", "public_repository": "https://github.com/DongqiZuo00/CAFD.git", "commit": "39fed00d4926204db601beb7c23dd5accb2e8d95", "clone_path": "/blue/du.j/jinjiaguo/CAFD/backup/github_20260908/verify_clone", "destination": "/blue/du.j/jinjiaguo/CAFD/backup/github_20260908/restore_verification", "chunk_count": 62, "chunk_sha256_and_git_blob_verified": true, "archive_size_bytes": 386255808, "archive_sha256": "3e2973a7560d6ba3e9b989c0379f3c7951e3fa59dbc0b8a678e951d76030e126", "source_manifest_sha256": "8e89027c13007192e066f1ba4128a7916e10705aff2268d75d2d39b54b72356a", "parts_manifest_sha256": "e5a6a6a6fb317490f533cd7054fffaf71e179f36cd1418d72714d6db368b0415", "restore_script_sha256": "44db322f2ea5444d76423e3cc504055ce692a4ce8016d3bb157943f28532a664", "repository_restore_script_exit_code": 0, "restored_file_count": 9163, "restored_bytes": 1929653192, "all_restored_sha256_match": true, "exact_file_set_matches": true, "network_source": "Independent public HTTPS clone from GitHub; no local archive used for restoration.", "original_git_bundle_sha256": "fcf7555f8ba12e4b0c34c1b9d3af922519d89160e7306705e9384eaebccb367f", "original_git_bundle_size_bytes": 255699, "original_git_bundle_verify_passed": true, "original_git_bundle_heads": ["518157ed07b30ccf02ca85e358ff334e65d7150b refs/heads/main", "518157ed07b30ccf02ca85e358ff334e65d7150b HEAD"], "original_sources_modified": false}

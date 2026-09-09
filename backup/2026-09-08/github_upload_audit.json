@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "repository": "https://github.com/DongqiZuo00/CAFD",
+  "branch": "main",
+  "backup_commit": "39fed00d4926204db601beb7c23dd5accb2e8d95",
+  "source_commit": "4e9850d2f693652d1782f867f29b88d01887ff56",
+  "archive_sha256": "3e2973a7560d6ba3e9b989c0379f3c7951e3fa59dbc0b8a678e951d76030e126",
+  "archive_size_bytes": 386255808,
+  "source_files": 9163,
+  "source_bytes": 1929653192,
+  "parts_uploaded_and_verified": 62,
+  "chunk_size_bytes": 6291456,
+  "credential_scan": "passed",
+  "source_github_audit": "passed",
+  "github_roundtrip_audit": "passed",
+  "roundtrip_audit_sha256": "752cf3856f87f0a04b61dca4123f954f466c25c945a875bbae350798a4059208",
+  "public_repository_explicitly_confirmed": true,
+  "memory_transfer_channel_closed": true,
+  "model_weights_optimizer_states_binary_probe_caches_included": false,
+  "excluded_index": "excluded-files.jsonl",
+  "finished_at_utc": "2026-09-09T00:33:31.937039+00:00",
+  "published_tree_audit": {
+    "status": "passed",
+    "commit": "39fed00d4926204db601beb7c23dd5accb2e8d95",
+    "tree": "d98fcfbd5b7487515f2216410490dedbdf19f901",
+    "verified_parts": 62,
+    "leaf_entries": 365
+  }
+}

@@ -72,6 +72,15 @@ def main():
  actual_files={q.relative_to(destination).as_posix() for q in destination.rglob("*") if q.is_file() or q.is_symlink()}
  if actual_files!=set(expected):raise RuntimeError("Restored file set differs from manifest")
  if len(expected)!=parts["source_file_count"]:raise RuntimeError("Restored file count differs")
+ print("verify_original_git_bundle",flush=True)
+ bundle=clone/"backup/2026-09-08/original-history.bundle"
+ original_bundle=BASE/"original-history.bundle"
+ bundle_sha=digest(bundle)
+ if bundle_sha!=digest(original_bundle):raise RuntimeError("Published original Git bundle differs")
+ git(["bundle","verify",str(bundle)],clone)
+ bundle_heads=git(["bundle","list-heads",str(bundle)],clone).splitlines()
+ expected_heads=git(["bundle","list-heads",str(original_bundle)],clone).splitlines()
+ if bundle_heads!=expected_heads:raise RuntimeError("Original Git bundle heads differ")
  audit={"status":"passed","started_at":started,"finished_at":datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "public_repository":URL,"commit":actual,"clone_path":str(clone),"destination":str(destination),
         "chunk_count":len(parts["parts"]),"chunk_sha256_and_git_blob_verified":True,
@@ -81,6 +90,8 @@ def main():
         "restored_file_count":len(expected),"restored_bytes":total,
         "all_restored_sha256_match":True,"exact_file_set_matches":True,
         "network_source":"Independent public HTTPS clone from GitHub; no local archive used for restoration.",
+        "original_git_bundle_sha256":bundle_sha,"original_git_bundle_size_bytes":bundle.stat().st_size,
+        "original_git_bundle_verify_passed":True,"original_git_bundle_heads":bundle_heads,
         "original_sources_modified":False}
  with auditpath.open("x") as f:json.dump(audit,f,indent=2);f.write("\n")
  print(json.dumps(audit),flush=True)
