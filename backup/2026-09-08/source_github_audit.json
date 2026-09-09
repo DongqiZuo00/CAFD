@@ -1,0 +1,2910 @@
+{
+  "status": "passed",
+  "started_at": "2026-09-09T00:17:34.838473+00:00",
+  "finished_at": "2026-09-09T00:17:36.497160+00:00",
+  "repository": "https://github.com/DongqiZuo00/CAFD.git",
+  "commit": "4e9850d2f693652d1782f867f29b88d01887ff56",
+  "clone_directory": "/blue/du.j/jinjiaguo/CAFD/backup/github_20260908/source_verify_clone",
+  "original_source_head": "518157ed07b30ccf02ca85e358ff334e65d7150b",
+  "source_tree_entries_sha256": "5e5e3e6af43dedf586f53e36d64e114351f95a878adf0fb8907f9bebc2c47f31",
+  "verified_source_files": 281,
+  "verified_gitlinks": 5,
+  "total_source_bytes": 1528268,
+  "all_source_contents_and_git_modes_match": true,
+  "submodules_fetched": false,
+  "experiments_executed": false,
+  "original_sources_modified": false,
+  "errors": [],
+  "file_checks": [
+    {
+      "path": ".gitmodules",
+      "size_bytes": 511,
+      "sha256": "8eee9a535202c432de74c86709a6e7f810a13183995c32e40d5dbf8b22024ca0",
+      "git_blob_sha": "37a88771b1db213b72ceccc7bb017773eb753828",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 908,
+      "sha256": "a581160ae1b8ff9e686d71166320d9d80c7193add24267d54734a5fdef64c821",
+      "git_blob_sha": "23a8bb74e3e1d410dd6cc3e22e8cadff77c644ab",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/__init__.py",
+      "size_bytes": 325,
+      "sha256": "945fdab8fd3d5b1f40ccb4fda18436f0c955965045a7c1a5aa3e54e8e0bb4575",
+      "git_blob_sha": "d55b521ddcd9ff5c6f216bf71813a749e6122ec0",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/anchored_target.py",
+      "size_bytes": 4069,
+      "sha256": "0361142c492f6437a5d737c8d36a6e4252ffc353d8e32d523eb1415f34080e54",
+      "git_blob_sha": "8a59c2d700ca6a7338223eccaf70f87a170cb009",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/bootstrap.py",
+      "size_bytes": 3844,
+      "sha256": "a8fadfd95a58c7b9a061e399c71117d491c4414ebdbb99faf4699add501f8e6a",
+      "git_blob_sha": "b282ce46d6ac8ef56f7360faee38dc0ee9b45ce6",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/canonical.py",
+      "size_bytes": 7165,
+      "sha256": "b79fc864965cbe67139755055442c8a6bbd060cf880899d6132d1523c9d99a6c",
+      "git_blob_sha": "970a3df434c96d85cf0d4414822db0e43e91d3ae",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/configuration.py",
+      "size_bytes": 715,
+      "sha256": "8b6a96c3a5c9b9346003121f37c9c7a2b4dad3ee19ab4adcc8a2687a363d1db8",
+      "git_blob_sha": "73aad10445b16adab18264e19c881e081fef5823",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/data.py",
+      "size_bytes": 4559,
+      "sha256": "3459af23a814306c6c0492e37b56a62dda8b4b51d556da2574ffbabf9a812ee0",
+      "git_blob_sha": "d5416a5aef5b13f2fd418892c2b803b7e33e43df",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/diagnose_capacity.py",
+      "size_bytes": 10013,
+      "sha256": "251d7894c0da1c85c7538459692a616cc1ba2ee30fbdd25a969531205cb821a3",
+      "git_blob_sha": "b836b12cea3a5367da7b0f992931d9a1ef8a7533",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/evaluate_condition.py",
+      "size_bytes": 2748,
+      "sha256": "ea5aa39f9b0d09b3af6c86d4bb0cc1647eaa4cdb9e53fd3ab82d7c1b699c8a30",
+      "git_blob_sha": "fea00fe83b91370fec5495440ac1eb440102e7bb",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/exact_forward_kl.py",
+      "size_bytes": 12931,
+      "sha256": "b37027f216f0e59fdafbeffd4d607930c14e889c090f39ab8c79f288e8dbc73d",
+      "git_blob_sha": "1c449adf9efa418b48905595162a147ace5084db",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/finalize.py",
+      "size_bytes": 6956,
+      "sha256": "7e2d4696c3999aea17184c340ba52796d2128fbe96fb3c37d2506fdf7d6e35dd",
+      "git_blob_sha": "ed300330a416f8defccfa18ef8e853cb2556e98d",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/fixed_path_kd.py",
+      "size_bytes": 15511,
+      "sha256": "6d823082bfcf02c5718c485455dece65fcca05a9ec086ab49b3fd8115e9b6d2d",
+      "git_blob_sha": "27bc0ec2d0fa6579b1b12adf0c364522a1d0a00e",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/freeze.py",
+      "size_bytes": 3195,
+      "sha256": "262c25a8a262da44e096d3917a737ad13f1dcf90bf51f7ac34a035688d3a7fed",
+      "git_blob_sha": "4e72be1aeadf563d325edf55efe644ef93c8ba2a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/generalization_split.py",
+      "size_bytes": 3607,
+      "sha256": "186a6624f2f795fb86feff2e2800f05fa016369cc83e2c6c866f74ab34f55dec",
+      "git_blob_sha": "7e7b17590dcff00272d73c0fec213aeec356049a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/kd_retention_completion.py",
+      "size_bytes": 4989,
+      "sha256": "8ce319d4dfc741780d4df88605800029737d74848fdd9421d29d9c0f0ea6dd80",
+      "git_blob_sha": "0771e1181a59305edf764fa0f9e1ffab4ae481c7",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/kd_retention_finalize.py",
+      "size_bytes": 23576,
+      "sha256": "c1f3f394f401b2ea2d05dde9a60bef64ba4321cc98dce2f2b99e6405a3214aa0",
+      "git_blob_sha": "f26da0699200af47cd960db2ebb99863e458f969",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/kd_retention_objective.py",
+      "size_bytes": 20429,
+      "sha256": "e4b56a49eca02b39f9d8f5b8396bd938e30c8cd74064d8973e969e50fcc81b8e",
+      "git_blob_sha": "b2dcaa0027554684dd9d5efae05916043346752f",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/kd_retention_replay.py",
+      "size_bytes": 1234,
+      "sha256": "8132705f5960182383811373152cfd55b628b68597b3d0682449be0d50424261",
+      "git_blob_sha": "7094225b9e6d0932369c42e69e077d4287463d96",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/kd_retention_report.py",
+      "size_bytes": 21061,
+      "sha256": "2d64d2a8341be87ea804e208a13efced5b83333d938da4fc8fcfe7594439554b",
+      "git_blob_sha": "5ef8fa7a33cf521c7da267f6fb084d6e9147c87e",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/kd_retention_runtime.py",
+      "size_bytes": 8403,
+      "sha256": "5004716d02fec3ec6ebfc00ff2d65ff07c3e9b5d18cc1de47323a85e3bff6b2b",
+      "git_blob_sha": "37fa66f0f5b5f63c015cd49840057c9fd228b045",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/kd_retention_train.py",
+      "size_bytes": 30106,
+      "sha256": "b6a0c420af0f26a4d847f9d4bc65ee20c49b70902890888a8a75aefc7c8f86ca",
+      "git_blob_sha": "3dac3ce4fe1018b3376e5d18d50d4c9acfa1bed4",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/layout.py",
+      "size_bytes": 1632,
+      "sha256": "2c6a53ecfe8700311bf23691d68dec7a4fc01f47cf62b8b6d5fd537402963c9e",
+      "git_blob_sha": "d0c5503e7aa367eae66dcc9c38917e40b169c912",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/minimal_baseline_finalize.py",
+      "size_bytes": 30234,
+      "sha256": "6962c6a45caefec93fed115c3abaa02aa1c5330e6b0e81ab868d6f442bcda6b3",
+      "git_blob_sha": "9c06f1abea32978c8c28c4cf7a9724c6b345b952",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/minimal_baseline_objective.py",
+      "size_bytes": 1308,
+      "sha256": "fbfeb707ded4c11d5ea672514badf30bbfbc58d2d6091dc61ef920083cd554d9",
+      "git_blob_sha": "b339e50f1bfda7bce14015c03e2b5dbfbeb4839a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/minimal_baseline_report.py",
+      "size_bytes": 20592,
+      "sha256": "3c27887bba150eb55189b464bacdc148d3c3595fee1ec2c59abdcda5f71bfecb",
+      "git_blob_sha": "c4e90dd0a3b97bb84d66b37a073b114643e686d1",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/minimal_baseline_runtime.py",
+      "size_bytes": 1188,
+      "sha256": "dac8f4588c07a8d40274a2c4b456c6f5d50530eb99a55c87841ab200824fe2a7",
+      "git_blob_sha": "2296465c346bfee092363043eb866d15db8c6e7f",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/minimal_baseline_train.py",
+      "size_bytes": 34819,
+      "sha256": "be446012ef0e116424ba58a2532e4b7003af8e78ca0eb2875cbfc97fe3c2daca",
+      "git_blob_sha": "5c535667bc49f4eabfac6c9bd38de8636d3f60db",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_acquisition_compare.py",
+      "size_bytes": 4162,
+      "sha256": "82252d94bfa4e6edbe6ee5bef90c26bb14a8bda77d9ecd1ddc4f1038b8d5790d",
+      "git_blob_sha": "8eef77fd6078a4a97a178f4a9cd5dfba9de18230",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_acquisition_observe.py",
+      "size_bytes": 7483,
+      "sha256": "5008be0e36a765e3db4f8b44b4cf6380b7dee363fbcd336e5373193c40591085",
+      "git_blob_sha": "e30249e8927f23a535aa07586b2b1ba4c4918258",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_anchored_v14.py",
+      "size_bytes": 6385,
+      "sha256": "6cbfdec80a99d29e1804f89574d8c3473f24c381d47e55f7928f775924ceca3e",
+      "git_blob_sha": "0a353f30b8a705d9d6c25b95991ade0fb31010a5",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_baselines_v12.py",
+      "size_bytes": 5722,
+      "sha256": "7a479a0d6987f22a3a0d917431216ad50ded1bcde2db25405dd866a8465d5a25",
+      "git_blob_sha": "a198e5d00c99c6bd36f945bd794a5b623b811176",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_cafd_generalization_v10.py",
+      "size_bytes": 7677,
+      "sha256": "e1612e49f314ea495c8fabf446d8d173773632dcc8df31e1180ef21d668826bc",
+      "git_blob_sha": "3c6c2e3345b418ec23f1c6bb0a632103132f77ef",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_cafd_only_artifacts.py",
+      "size_bytes": 4705,
+      "sha256": "4fa535b7d51e207d066f8aeb81bf539cec92e446d654050c7966ba4951955158",
+      "git_blob_sha": "b33544dbfc9b56092bce467471812ecc1aec835c",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_cafd_support_full.py",
+      "size_bytes": 10598,
+      "sha256": "bcec6b0d202f51332403ff0df7061d5ed865094a9ea71b8d30fdf56ac2bb491b",
+      "git_blob_sha": "928b8a87ef4967be598aa3a98641c3d2b889d224",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_cafd_support_probe.py",
+      "size_bytes": 3786,
+      "sha256": "23c3f8eaa9e0d62b1eddb5fa2abef3d81951609cce525628e0a573949d5ea8dc",
+      "git_blob_sha": "0e1cf3975b6fcb01842020ccaa406bd3c7c5389b",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_direction_v15.py",
+      "size_bytes": 8707,
+      "sha256": "b7d39c4ec18ddc7a25ce0092196c86678f522b270d09a5f1d89d4929fc946222",
+      "git_blob_sha": "a0c62dea8324f8d3caf6778f4634a2a5af563c7c",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_disjoint.py",
+      "size_bytes": 6741,
+      "sha256": "31c3e12b34c778a7688f9b3d81182981f8b6dd4244fc8ae250bff09480b4061c",
+      "git_blob_sha": "d74d843ab40a98aa6fd0b893b2c00b6a0c55de11",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_evaluate_condition.py",
+      "size_bytes": 239,
+      "sha256": "e0b2fbf451eac3ffb768a91ceb8ca7f0de848d98b6d507ba92582b3fbeedd673",
+      "git_blob_sha": "dd7e3b6ead8c909bc20597b76f86de6b7b88c852",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_generalization_confirm.py",
+      "size_bytes": 4802,
+      "sha256": "add415ec74ef6403dec9ca292c73c5625e16bfbdf51b2e4bdda293529c9964c3",
+      "git_blob_sha": "9176b40148bc0303efdf95d167eca0cf05e0bc3f",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_generalization_decision.py",
+      "size_bytes": 2757,
+      "sha256": "42ca99660bf14a2736bc8fe0b75bc04956d7d224b4b1e416faa0adecb4c4dbc5",
+      "git_blob_sha": "b83679f853c81258b6fa0e8e77c09da6784ddfd3",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_preflight.py",
+      "size_bytes": 2697,
+      "sha256": "edfe16c94d49b49a105b3a6bd99f926a40eea67a0c2a83d7c1f290fe76a1ebc7",
+      "git_blob_sha": "6bd755ab4a1bfbe327df1d0608d0488dd1d373af",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_prepare_teacher.py",
+      "size_bytes": 3578,
+      "sha256": "1a64741c2bde62c89426d417273e92903ce29e9ef17ffa7606e2642bf965ae76",
+      "git_blob_sha": "4c8cbbefbdb5dad814a7fc933feb3c47c76e788a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_progressive_observation_v11.py",
+      "size_bytes": 6677,
+      "sha256": "ad430f0eb597dbac0cb8e63a604a4f9345fc3211de1b69d34a8716c8f56cec5a",
+      "git_blob_sha": "f3e09d31d02b6288b4d2214a9b37dc2f1a5f002f",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_runtime.py",
+      "size_bytes": 6746,
+      "sha256": "5905a240bd9ad0fb125a66d1a4d855c0756a7f631f92ff51f712cae24d1c0e82",
+      "git_blob_sha": "6f3d0694cf7f163af3642a69b3925d18f4d49cf4",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_target_audit_v13.py",
+      "size_bytes": 12691,
+      "sha256": "59f4b8651d9ffd138bc6504de56a17420df0bf3c15f0ab116d98c7e1c6118849",
+      "git_blob_sha": "a869a5b55657e8a22f317d3ac2a20fccb4586687",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_train_capacity.py",
+      "size_bytes": 231,
+      "sha256": "e16c36581d84449a7a7b34f7589f1cee8c477f940b4ff7e76281cd6089bdd8fc",
+      "git_blob_sha": "d31437aad41dad5693b57263e5ea63b70d810897",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_train_student.py",
+      "size_bytes": 224,
+      "sha256": "ed63bc6281e5d42bf1cd35fdcb593a7a73d15d8b351763fd86d6815a8bc9c70d",
+      "git_blob_sha": "dee4f1e828081a98a46387cf91499f20191b08e7",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_train_teacher.py",
+      "size_bytes": 656,
+      "sha256": "3539be449205b04e96b130d334ede87b849774752c105f3d7808c84e8df38caa",
+      "git_blob_sha": "d364f512e0c6d6e251f09a8efc828206ed967255",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_train_teacher_capacity.py",
+      "size_bytes": 255,
+      "sha256": "8f5e84df20186bbc8df283e22aceb341cb7e9879196d5920cbedfd48723c1188",
+      "git_blob_sha": "921eafb7f7ef43cfb823cb5a4a980cce57618b80",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mistral_warmstart_gate.py",
+      "size_bytes": 3955,
+      "sha256": "424837ebe7aa443ad4f71633fe9e219948cd31cd499ebed7ff303dc8fa91baae",
+      "git_blob_sha": "2ec0058a6123fcc025a889346b04e1655af64acc",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/modeling.py",
+      "size_bytes": 4300,
+      "sha256": "23a8fc8e62ecae95555c9c615b2eb005e488d7c2706fa00cd1334c9b276abc2b",
+      "git_blob_sha": "f2bf9e57612280827792df84c71cefdd52bc14e6",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_allocation.py",
+      "size_bytes": 4401,
+      "sha256": "fb2193eeaf03e102e5c685d804bf1ff9844c8e88e32ae95e1a4f3d27eb0425e0",
+      "git_blob_sha": "8dcd458efb15e803a7be964da88fabcd04d76a6a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_controller.py",
+      "size_bytes": 17739,
+      "sha256": "2863ed18db11aa6aa5c56d36db57e40a9112fe5789f17d98dafc5c89db7723d1",
+      "git_blob_sha": "bc924119e1c7749b8fc602c348d61159f3003218",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_data.py",
+      "size_bytes": 16410,
+      "sha256": "791cc98961ede180e443f64f0989144c2887947b76c9f5135e1ce80c92d38b0d",
+      "git_blob_sha": "52ec2ef7c8418ec752f4c7dddf9924932648d584",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_finalize.py",
+      "size_bytes": 22388,
+      "sha256": "8372c42a4b33be3c1e128b35f0c78d62a46a583a7d6d103a1b007ebcd6e3b48f",
+      "git_blob_sha": "4c796950876c3d9918ee7ac099130900cbd76b3a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_ledger.py",
+      "size_bytes": 12972,
+      "sha256": "f196e7db680dc58d14ef035a485187a54b5febf527c152ab549c8023308bcfd8",
+      "git_blob_sha": "9c03ad85ae430d349c838a92531454e3b79979aa",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_objective.py",
+      "size_bytes": 20115,
+      "sha256": "8b3d1ec7198fc70512d4cf0d712edea1e7825eb2b2f01f048ae825e4ed7f0ee6",
+      "git_blob_sha": "aa07eefc876365eb4b24a916574206880ff10035",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_runtime.py",
+      "size_bytes": 8396,
+      "sha256": "89618d48a0bb52cceddb906a4ba68db3f37653128a26715f2e558960591fbb3d",
+      "git_blob_sha": "73991b1f09bdffaa2938bc2b5a4a43a4c040220e",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/mpc_train.py",
+      "size_bytes": 25543,
+      "sha256": "643b1e65f62e300af7ee687131b927ac25618882a10b4b4bb2816bcd71aae51e",
+      "git_blob_sha": "dd163052760c39ee9087e03f5a4fbddb84fd3ca5",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/optimizer.py",
+      "size_bytes": 3262,
+      "sha256": "638a81e0a7a8b3946afc6db5d332779d9b0c4497c3440206cff5900674bbcd97",
+      "git_blob_sha": "47b599e54496dbfa451bfc94b475df8a82566f28",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/phase_controller.py",
+      "size_bytes": 7557,
+      "sha256": "4731a2e46215ecd3e546087c947d64f44293fc68c16b4eafc1920633b424ff4d",
+      "git_blob_sha": "c5f0d60f501cdf1814634f382e1e005df0914183",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/prompting.py",
+      "size_bytes": 3629,
+      "sha256": "a7fa3829dcde387f8087ac3818d54701b667d56cdbe282962fb83c48f974289d",
+      "git_blob_sha": "2610b28770babb54eedbe2ea1462e5555d899443",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/recovery_v4b.py",
+      "size_bytes": 29388,
+      "sha256": "734c097aac6371976d7c423c55d4aa253913d1fdeb4fedee68dd416ebaa5332e",
+      "git_blob_sha": "db1eda95b02db08bceb312ea5aba9f704cd795fe",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/relative_target.py",
+      "size_bytes": 2432,
+      "sha256": "7e2bb57bc5c10492ce4e3a5a84b7d327e73eff182d137b92f2b690becc43b75c",
+      "git_blob_sha": "e1a86f3cc0100f520a82b5e85ec8efba8d29cb33",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/renderer_gate.py",
+      "size_bytes": 5857,
+      "sha256": "af97cd39717617d1218b0893851486f707d89d1fc2101e13b029f608d29861db",
+      "git_blob_sha": "d7f4407e3397742696c539c9acca2f8bd90465ef",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/setup_cafd_only_v5.py",
+      "size_bytes": 3179,
+      "sha256": "b65a1ff2f06d9df4299feeb7bc7401943077e0ca71ac2b7d2e4cedb78a9fdc5f",
+      "git_blob_sha": "2c891a1fe1a64ff1b7e69e43cdddbedece493aee",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/target_path_prepare.py",
+      "size_bytes": 14189,
+      "sha256": "ad17939776d4d0c85ccbb23f02d1295c3498a69834907cae057ce482dcc69436",
+      "git_blob_sha": "80a7866d6d66530a7876cd0a7f452ed5034929b0",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/target_path_report.py",
+      "size_bytes": 54121,
+      "sha256": "f97bdd10d32ddfc707c63fce1c6b91ab7b662009f5e22c8d9f862d7d5276df46",
+      "git_blob_sha": "b4b21b03cd89a29c4813ab033d53f1b2aa75796c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/target_path_resume.py",
+      "size_bytes": 6659,
+      "sha256": "fd6a2f43a8a57b594dcd1503f8705443dbdb0e5c4b60ff2808bedc51eb81174c",
+      "git_blob_sha": "bbed404fe689dc8b9c24f1e42bc963d72622457e",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/target_path_run.py",
+      "size_bytes": 8959,
+      "sha256": "3244d5edb1fe316ca294f377260a87396b8fffc5198c8ca70ba0872dc89efad1",
+      "git_blob_sha": "28e65d50c3cdd25d55791863a6d8030943c79b44",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/target_path_t1.py",
+      "size_bytes": 19913,
+      "sha256": "966d4ba2362deb8b07fba6fb2b336c875385f6b0e441f36b50e0b0c4470d4c31",
+      "git_blob_sha": "76726d7c352ff106ccec22968a61503b16b6d02d",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/target_path_t2.py",
+      "size_bytes": 32220,
+      "sha256": "3f790389d4721eb2fbcf599f6c4d47489d90a5f29ee20ba23f8b056ba32c0d6a",
+      "git_blob_sha": "28ac4e5e3c8f0ed302e407594877cd257c56f9ba",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/target_path_validate.py",
+      "size_bytes": 6147,
+      "sha256": "341eb5b16b330606dad9fcce90fe88e68cb361d8cad4c0c363f826f16aaa1df9",
+      "git_blob_sha": "51a727bed8cac52be343d728e74a9f50ccf33615",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/teacher_warmstart_gate.py",
+      "size_bytes": 5244,
+      "sha256": "1040bd198b1c796a238b7ac822ff39a85b6af94d39bfae198fae86e173daffec",
+      "git_blob_sha": "1838bc26f4e9afe7f9ea3d72ecd36d2d1ab1c5a6",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/train_capacity.py",
+      "size_bytes": 9037,
+      "sha256": "7495d4e0f9e8165085951a61144220d17d944678674c8ba62516612f10bc831b",
+      "git_blob_sha": "5a22ddd766f9dd37f2871ea325d3476a4c752ef8",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/train_student.py",
+      "size_bytes": 26462,
+      "sha256": "a5225060b941cbea66832a1a06b4e280ba93a12ab5af339d0df20bb7e3a2c8f2",
+      "git_blob_sha": "aefb6ec48c4acad780c4d1fa9702e70e862dc285",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/train_teacher.py",
+      "size_bytes": 11177,
+      "sha256": "2bd36f2a74446610e73bf1fe812bed61f56686e9f825b7b4e40faabbc40c3645",
+      "git_blob_sha": "ffebc108ad2cf4f45b4442e9184a6289bee01a79",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/train_teacher_capacity.py",
+      "size_bytes": 9596,
+      "sha256": "e11e734ee28b821ef2db0f2783d8ec69b6277db07638f981186b9a0549e03f95",
+      "git_blob_sha": "57dd6b28478950192f0a0f8158502416cf6df811",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/training_common.py",
+      "size_bytes": 20019,
+      "sha256": "4a3d0b1b9c96dd2bddee21c1a37b20d3ea176bed2c0d74c91baa8352a0dfd623",
+      "git_blob_sha": "a71e8b56fe49c34e483261fd630ffea213d6f418",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "cafd/verifier.py",
+      "size_bytes": 5915,
+      "sha256": "caf409ebb211acb6a46d52748aa060e73496f6f55d1e5a5811f912c7deae8999",
+      "git_blob_sha": "f08097d5f56c616484783d67e0eaec0e1b4b15c3",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_cafd_only_v5.yaml",
+      "size_bytes": 1294,
+      "sha256": "5ffacba54bd9bf214ebf1d35b102c712ec1a85035a8869515804f29e1d04a09a",
+      "git_blob_sha": "a218941a3899ebf1c2c20ec1df7e1aad0ec0b7fb",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_has.yaml",
+      "size_bytes": 2262,
+      "sha256": "9ea54db328861f7ccaa5aa4162421c5586c7ceaaf0eeba0c8ec9f718ac325132",
+      "git_blob_sha": "d455a6eeed6b93e8db3c9ce54bb24dacf5af78ba",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_mistral_cafd_disjoint_v7.yaml",
+      "size_bytes": 3018,
+      "sha256": "036ee2864ae8bb74fe783a4e50a6fc7d6994df816bc45270484c56e16273f244",
+      "git_blob_sha": "3d7cd4ab6c654ebd6796d2bbeda4612b0b2db941",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_mistral_cafd_gen_v10_mixed.yaml",
+      "size_bytes": 2022,
+      "sha256": "5762ae626e5f1b78bc43a0a56207e7a643acc7700f72faafad02d15080c5367b",
+      "git_blob_sha": "00dad0791e8a3ebaa1c63e06119819228e8b7b73",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_mistral_cafd_gen_v10_teacher.yaml",
+      "size_bytes": 2022,
+      "sha256": "cd5e01d9da96b13fd722301a26a4dd66591ab95ed672da0aa3040914803cf043",
+      "git_blob_sha": "733f0d3b6db11a3c3c8a98d10c9b7e0f67647375",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_mistral_cafd_only_v6.yaml",
+      "size_bytes": 2731,
+      "sha256": "93eefcfd181c90b90a89c3d6e4106d5f42378c8ee51c0237afc26ad52c4c090f",
+      "git_blob_sha": "843bde9d6c3e5e37fd8f62ef8abdc422bdc8aff0",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_mistral_cafd_support_full_v9.yaml",
+      "size_bytes": 1688,
+      "sha256": "45fae80c2ce4dcce2d6dfc3d7c9f2981db8b5dae76a70ebd0d1f3c9bb2798c73",
+      "git_blob_sha": "57f1d1070f928b6678643df10d6a5eecc074b30d",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_mistral_cafd_support_probe_v8.yaml",
+      "size_bytes": 1353,
+      "sha256": "fc0087ec886f76ec4c96910cb61e6e0b0f2a59988a17ea67b0b0900ed4ab8c37",
+      "git_blob_sha": "06855e4d4a2245a8dac9f98befa5de052dfc8cc6",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_mistral_progressive_observation_v11.yaml",
+      "size_bytes": 1727,
+      "sha256": "12d2d5aa4f84f248704185465fb23273d43c7871ecf0dfb8f974bcd9df2aab13",
+      "git_blob_sha": "666a4321eb00267dfbd533098928be9e7fbb94cf",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_teacher_capacity_v1.yaml",
+      "size_bytes": 1057,
+      "sha256": "8eeb958b1ab280cbbc784992ac0a68052f61f8d997f50a6420bbc8cf765e7513",
+      "git_blob_sha": "94b8c2e9ca93a7423e540f10f2345593547f357c",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_v4_sft25.yaml",
+      "size_bytes": 1955,
+      "sha256": "cc45ed9d23f22bbaba1dd470f43b474586ac170c1dc95e742caa07e6a148847a",
+      "git_blob_sha": "b15e937f15e9ce937ca1dbb8bf71e14080f17a34",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/cafd/manufactoria_v4b_sft25.yaml",
+      "size_bytes": 2067,
+      "sha256": "46d8fada3a123b2a964d909ef5d29cc0137601a2c0b0d55c8cdd85ec2cc81f1b",
+      "git_blob_sha": "5caddc1335b51aec6c2178cbf86e95462c9593b5",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/backbones.yaml",
+      "size_bytes": 1070,
+      "sha256": "13dedc4381d9da68eab9f4ed80f0bb3eea24311e89584f964354da85cd79abad",
+      "git_blob_sha": "ccfa402dacfdc7791a82aff95f052d13bfa006ae",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/benchmarks.yaml",
+      "size_bytes": 1673,
+      "sha256": "63a293ff4f6d6a9749caeb7aea4113752a5f296f0b86ad5b6ca35586db8e0b27",
+      "git_blob_sha": "d6fbda4f0b8a7397db5be957e3b6ac99827ecef8",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/data_protocol.yaml",
+      "size_bytes": 1214,
+      "sha256": "473d4730a79665f0fa423ce3a7e55ce99da68f6d124fbaa9b9e5b74acdb42a43",
+      "git_blob_sha": "8d3d592dd6b9567b710b8f0666346e583fdec771",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/deepspeed_mixtral_zero3_offload.json",
+      "size_bytes": 647,
+      "sha256": "5a08da991f6c3fd68b6b967d21109d48533074bf9e8ebeabda08a45e4a88b0a5",
+      "git_blob_sha": "4509e93e0d7996719ec8a955f6bbc9c9368cd8c3",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/deepspeed_zero3.json",
+      "size_bytes": 583,
+      "sha256": "9eda71767dc2ce0a07f96114414721ef36f899954a22f62bda89c239d8a0ccac",
+      "git_blob_sha": "0ac9a553d4bc771e8c50a267a744d7d0a0361fb8",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/jobs.yaml",
+      "size_bytes": 3454,
+      "sha256": "0f3f367aa78a76c5d9df6fdc8187159f6bec183a3e096e76c47c8f08065046a7",
+      "git_blob_sha": "cd83c28fa587c9a9e5e22f3fcf1e4b94dd619854",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/overlays/minimal_acquisition_gap.yaml",
+      "size_bytes": 2571,
+      "sha256": "a9d91ea0bafb1c4545a0f11b8cfdf5ea63356844b195307488853c962c4a1b2a",
+      "git_blob_sha": "1fdbc33f61320fff43fb50de10e4bc8b53e9fa94",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/overlays/minimal_jobs.yaml",
+      "size_bytes": 1161,
+      "sha256": "d87386a8b1f15124e1dffc5df35c85c088e7e4f4dc4e8fc2482c728fdfe6e1cb",
+      "git_blob_sha": "c0a821dccaa439d6489a1e6b0c7c6ff8a9394889",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/scheduler.yaml",
+      "size_bytes": 1148,
+      "sha256": "cbda67332c149a80dbb1098cc7adabd489e655307667dbeffe89cc7a54727be7",
+      "git_blob_sha": "4dce123247f9a7926321150ffd57511909204b8c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "configs/gap_validation/training_protocol.yaml",
+      "size_bytes": 2511,
+      "sha256": "af80e3d1528ba4278bea1884e4f69083a47a6d7d9ad02c9659e944d42116e4a0",
+      "git_blob_sha": "3dfac931df96d452321cf698ded40f2c45fc47e9",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/capability_gap_validation.egg-info/PKG-INFO",
+      "size_bytes": 899,
+      "sha256": "73413a0cef213d2ec238394ca2c5c1b8531f1ce295b655f83ab6fbe1eb847a50",
+      "git_blob_sha": "86152292c9c6210c7738a9837ef8991387039468",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/capability_gap_validation.egg-info/SOURCES.txt",
+      "size_bytes": 1632,
+      "sha256": "5053763faccaa10c3ff6e7880ea76b243c6056c61e0e47f5b73530bcdeb97eb3",
+      "git_blob_sha": "1718025dc442b81ffc576a04313089cae5a26ac8",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/capability_gap_validation.egg-info/dependency_links.txt",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "git_blob_sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/capability_gap_validation.egg-info/entry_points.txt",
+      "size_bytes": 328,
+      "sha256": "d4a3f14faffec00658eb50f82a5f15490d1048b5cc4bd7da0af7b597a8790a71",
+      "git_blob_sha": "847625863e60e8f8b16eab838a6cc1fdaa5383e4",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/capability_gap_validation.egg-info/requires.txt",
+      "size_bytes": 437,
+      "sha256": "2f67285c48f71a1019b33bc31728126e7eb8326293405010713aa022752adc9b",
+      "git_blob_sha": "ecb059bae40e6f52514cb5fa6414875656ce824c",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/capability_gap_validation.egg-info/top_level.txt",
+      "size_bytes": 15,
+      "sha256": "4490844a8d27c982ddf4ac59b4c0e10fadcc77707ff33aa2fa96b47bdba74a0b",
+      "git_blob_sha": "23c8561d7460d328b83b11ed2e6523c1d55fe26a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/__init__.py",
+      "size_bytes": 77,
+      "sha256": "21f6e8ab56ab0061922eaf2e33783634b7b9d11f888d6bf29db102eac9cba38d",
+      "git_blob_sha": "8d37e1fc462bbe1872a9707d496e45d32e465f73",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/artifact_init.py",
+      "size_bytes": 1882,
+      "sha256": "b253470f6466be17a2a4283417823c13a28060b99273ce4d7ce3f3ffb6cede13",
+      "git_blob_sha": "80ff4aca40aa28afad09ce341e22eaed5f7080ea",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/checkpoint.py",
+      "size_bytes": 1503,
+      "sha256": "ab67d25ee886d375d9de96e2419217ee34f1d9e3ae98b2d6d15e8ed809614d01",
+      "git_blob_sha": "184efda160d212000a073a7d94d86989082e7dd2",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/config_contract.py",
+      "size_bytes": 2660,
+      "sha256": "f73d45e6dc50547d586907cfbda0537836dd2c935e1e4377110fe1eba2eebd0b",
+      "git_blob_sha": "29092dd46b61283ad56f9907178f24b7aba93667",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/data.py",
+      "size_bytes": 8413,
+      "sha256": "50c1f58ea66bae81a9226328b502e2fb423b28f6a219e7db5adfc8342d9ecbb2",
+      "git_blob_sha": "372f699253200dbb17fd6b12eef108a0ca4376cd",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/evaluate_math.py",
+      "size_bytes": 2804,
+      "sha256": "8bdb605242ae79f68739e1b42294d06178eb166802517e12b2ba78caf31d797a",
+      "git_blob_sha": "44cf81d0b34e46955c02f7f3b0d3c49d00be1aad",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/hardware.py",
+      "size_bytes": 4532,
+      "sha256": "3bc28dce281c7b1b8f2cfe1edabb90f75e9ef38b5b550aa32600281fab0b35ef",
+      "git_blob_sha": "28a50bfaf98b022920114f8d991c65782b2d1724",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/io.py",
+      "size_bytes": 2087,
+      "sha256": "4553adea2923b7d6e551018306b27ce1962a0ccf403707fc791d0a35435bd4da",
+      "git_blob_sha": "7ebbf09dd9930d8150b92a7eeaf65c7378a07ee8",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/kl.py",
+      "size_bytes": 2931,
+      "sha256": "409584a64dc31844848866fdfe5218f46d2fb46d56150a16126bc0ac22516cbf",
+      "git_blob_sha": "6ca17ad40bab6b94aa0706533caed3d1bceb1d75",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/merge_teacher_responses.py",
+      "size_bytes": 3511,
+      "sha256": "4aa392217c3b42eda0f51c21ae413eabffa7ff95744d4bfd41de6596e981cad1",
+      "git_blob_sha": "c5f968461fe2ab81071c376da4aa058d6b38978c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_direct_route.py",
+      "size_bytes": 1874,
+      "sha256": "ad69e935d786014a60a1847c5c691f36e0ac91be39a12d30956a947f39a722e2",
+      "git_blob_sha": "38cc4d6a45a2fb6c0ed4bf4a041b5d53c2820585",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_evaluate_math.py",
+      "size_bytes": 5012,
+      "sha256": "a277989bacd82df8c4975da02310afc7f5467548155f954947b0060b92e1bea7",
+      "git_blob_sha": "97757e248250e93e19bba681c006b8bdaa28f092",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_final.py",
+      "size_bytes": 22024,
+      "sha256": "ab1bc8ac054609bbfe89abcc5308ea4c06e3be8e1fab7d7da74f0a832b0977ee",
+      "git_blob_sha": "392da49862bf6fa8f6e6f1f1daf094122666d6a7",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_gates.py",
+      "size_bytes": 1136,
+      "sha256": "43e1ce5c7b6410e7d35e093df73453b28b304e263ce5978114b728e8d3d4e3b6",
+      "git_blob_sha": "2fdef3b2f2932fbbdfc253321b4c35e555372bef",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_opd_route.py",
+      "size_bytes": 1855,
+      "sha256": "13de4dc09ede42dd218313cd4a2013c31df31f87d0cba02e6f79049d8bbe964f",
+      "git_blob_sha": "f87603a72776dd78ea51987030130103a1c5b7a1",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_oracle_route.py",
+      "size_bytes": 3970,
+      "sha256": "c0aae94056c7383847b737e0b5ff70843bb55f8496d7038c17599f8d00370977",
+      "git_blob_sha": "d335289fd8dc3f1d907bd9f175c7d9b7720036f0",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_prepare_oracle.py",
+      "size_bytes": 2792,
+      "sha256": "3f344b76914c49625942eb448c5435947cbf751df719426767a4a432c4d3bd35",
+      "git_blob_sha": "6b456293eb43c74cca6cf3ad88e7906e7d146bf5",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_routes.py",
+      "size_bytes": 2987,
+      "sha256": "4bf67ce91991574808ac666cda52e4ea6d659e316de352e75e1f248a0b26ec87",
+      "git_blob_sha": "41bfd43c1b72ff8924c69fdf47c1080c0c28332e",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_runtime.py",
+      "size_bytes": 3000,
+      "sha256": "0616bff167aec082f03d96ce762a89e07370f87719cab68dc78bba98f51f1daf",
+      "git_blob_sha": "3a3fa550f3a2ec25ee1e1d965b7652835940a4a3",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_scheduler.py",
+      "size_bytes": 7799,
+      "sha256": "e363eb9cbfdeff49a1de5ac920ab04436c5b31dfe4250d148e9174e92daa65ce",
+      "git_blob_sha": "b7421f9653e88fda304fa8fb029dc3d793478ea4",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_teacher_development.py",
+      "size_bytes": 1821,
+      "sha256": "2e52a332531168822b26e64f502006dc8faf60aff11f983f50d1d2c11a8719c5",
+      "git_blob_sha": "6d3b8f5c5c4f0e6278b8a11823f78b5bbeffc560",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_teacher_recovery.py",
+      "size_bytes": 3462,
+      "sha256": "8313f71ac220b46af7fa31fbb62823ca213ee255548c7b6c6ec35e36671acdd8",
+      "git_blob_sha": "0242c5ecbf9c87f81d8f8f2531f797864b0e56df",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_train_grpo.py",
+      "size_bytes": 5453,
+      "sha256": "cdeb92064ea269b22abd850c3bb826ac1096dc6ba8f004dece31f7ace86322a7",
+      "git_blob_sha": "5965e9e52073a201f35d955559dde880c008fb93",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_train_opd.py",
+      "size_bytes": 5663,
+      "sha256": "708b13536745a63ecf79e262da4629d1ce149609bc2975271d03c196dff4200e",
+      "git_blob_sha": "23d3741f726808bcd6f394458b9c683dac344b5c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/minimal_train_oracle.py",
+      "size_bytes": 4733,
+      "sha256": "fe4d0f32cbbeb8bf0890af33e29f6345b96f5dad56de3184532d84c6898da044",
+      "git_blob_sha": "2c46e3f8fb00bf4526aa36efe4d8237a933e83de",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/model_contract.py",
+      "size_bytes": 906,
+      "sha256": "3d01a13e7c17a3d335e468dd666a04f1f07fe3de4a2bd3859ba7671c104f4eda",
+      "git_blob_sha": "d1a72d3cb48f92e151876c32d1b9cc0946989387",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/modeling.py",
+      "size_bytes": 2681,
+      "sha256": "f64df7a14662cca7099ac6060afddc64b9dadca07d43a071908cb642705fd898",
+      "git_blob_sha": "8156bfe252bf4aaf1852812af897088bcb6e770f",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/overlap.py",
+      "size_bytes": 4217,
+      "sha256": "2dd3289a66aa686039cd6d82ee114924080740de769aa782055a0bac47693335",
+      "git_blob_sha": "c51859d3180b9a0700b43993c8ab2262e37eb37c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/prepare_sft_data.py",
+      "size_bytes": 2578,
+      "sha256": "264de8da78eadc6595c856bfabfb32f718e3c8cf1b301db037a66d1873c21993",
+      "git_blob_sha": "b4f169d9df0357c16c2a042671a5f42d66b9f5a7",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/prompting.py",
+      "size_bytes": 1266,
+      "sha256": "cee8a30d27cdcfcc8961fd96017473de866721240694208348bce7d5621775a5",
+      "git_blob_sha": "cdafca2edd8e25389fb68c5f8d977913aa11aa79",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/scheduler.py",
+      "size_bytes": 7286,
+      "sha256": "d5feb4eff7381223fe1bfd33820c45f4e5621d54b596d083fd328dafbc426119",
+      "git_blob_sha": "f210170e2cab1630cf57da7340244bb051402aef",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/sft_route.py",
+      "size_bytes": 5328,
+      "sha256": "e0589f5e65197ceeed3dcf48addeb3d78f0f2f9967272bc586d177f668b20ee1",
+      "git_blob_sha": "91735a51d526ad0c4893653137ddee876994c063",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/splits.py",
+      "size_bytes": 1815,
+      "sha256": "361c5bef4a3a874620c956b0d5be2e7454fdb46d56172233b63cb0436e5c7247",
+      "git_blob_sha": "4ac5f05ca759b10996b25a9ff363e614694986a0",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/status.py",
+      "size_bytes": 494,
+      "sha256": "b1cedde94db540eb5298cbd56ba3ee9940201c386d4cfa6971d464857b1b5795",
+      "git_blob_sha": "38b39c512657c69ae4b26d99367d6447b7bc9ede",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/student_route.py",
+      "size_bytes": 6446,
+      "sha256": "326fee591e8063855503bf243fa0eb336183e601b340c5ba01438ea594919555",
+      "git_blob_sha": "ec5d1174205bedf993890fd3f80b896316accdfa",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/summarize.py",
+      "size_bytes": 1792,
+      "sha256": "89c4a040618b03b4ac8132138374609bf4ea46e4d918345cd0baecf8199f5cb7",
+      "git_blob_sha": "cc8c0652a4654b37f1154fd9aa78fb800d821c7a",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/teacher_responses.py",
+      "size_bytes": 6815,
+      "sha256": "e716fd3c5f499cca5167f717bf8f53254d86783241955834669416e5c9173015",
+      "git_blob_sha": "cf0a791079ed249164bb1d8feab53a14152f13f0",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/teacher_route.py",
+      "size_bytes": 3426,
+      "sha256": "c6f4b6b4d07834e5e4b3ea86755774953da63262e00df51af96c6b07e21bacbe",
+      "git_blob_sha": "9fe3a7f51d94c7362f60f790b4651d79d0a0971f",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/tokenizer_audit.py",
+      "size_bytes": 4168,
+      "sha256": "5e44596a26f2ecd0da3b469fffb98935e7def7161855435292f94b68651fd09f",
+      "git_blob_sha": "93bcba132c4ea5b197a41e4159e837fa2d3a7799",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/train_gkd.py",
+      "size_bytes": 6495,
+      "sha256": "adf02d524317a5d860e70aebef2ad01459ce081747b73e8781121243665b6ad0",
+      "git_blob_sha": "ecece93a6572085b05ffecebf814553482085984",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/train_grpo.py",
+      "size_bytes": 5120,
+      "sha256": "318c575235b10c1b170b616fd8b94e8ab89bfe4daa79c5014f0481408d8db5fc",
+      "git_blob_sha": "3587b75cc6bc4a8893aa7942ca32fcb1de0f01a3",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/train_sft.py",
+      "size_bytes": 3367,
+      "sha256": "22292c8c9bb7c2d9e99a91e5ce601d211ea9c2e465c71923b72fe9cd7c6d8d75",
+      "git_blob_sha": "7a0a2acdb4d02a2b277950945ff4350acbf1f0e3",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "experiments/gap_validation/gap_validation/verifiers.py",
+      "size_bytes": 4857,
+      "sha256": "f75bfd7e7fe1e97b5a231ba1864f45017f333f80b2e70bf6b8569bafef7a37e7",
+      "git_blob_sha": "d2bde54730a88745bc50471291d0d5db3c35a87f",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 1333,
+      "sha256": "5d2e8580afe04f52909f72e13be60c19cde7612e7a3e6421db10168fdd25781b",
+      "git_blob_sha": "ea89eb1920ca47399944dbe9fbe0fef685a8bd0f",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/CAFD_CURRENT_WORK.md",
+      "size_bytes": 3053,
+      "sha256": "c7970b724624f2bab012de289cc2361450ffeffa1dda2fd93cd5428ae92d176f",
+      "git_blob_sha": "b3d445469d73d1115f2cb6928a1aea532c30e7a3",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/CAFD_DIRECTION_V15.md",
+      "size_bytes": 1281,
+      "sha256": "c508dc66f7aa3fbe96fa815f5cd5f6f3a34620e2708c301199ddd9412e27206f",
+      "git_blob_sha": "0ba975c2f1b2d80a6c143b687090f674217ddb88",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/CAFD_MPC_CLEANUP_20260906.md",
+      "size_bytes": 1356,
+      "sha256": "912d1c6e42db2a5a37f6ff16cde799e55c492ddcaec05c08ec372c0e1b834e4a",
+      "git_blob_sha": "e7cdff3b55e2da8938532215890b13955d9f90f5",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/CAFD_MPC_FINAL_41249364.md",
+      "size_bytes": 5442,
+      "sha256": "10638d07eb45ba6cde124462168421a1f20315d3c7da0c23f0e1aed789b3c145",
+      "git_blob_sha": "eee02065a6c424caf63a5f09ecc10f257da1ea3d",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/CAFD_MPC_FORMAL_41249364.md",
+      "size_bytes": 3978,
+      "sha256": "402d1eb39911cc93984155deb1665ba334c7b57d4adb9b52f3959d75a4e25e9d",
+      "git_blob_sha": "d0806ee848e2f54e6ca44a455850716bc469d254",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/CAFD_MPC_IMPLEMENTATION_20260906.md",
+      "size_bytes": 9466,
+      "sha256": "1705734026a14aeea1935cea0d67b91d96e04ba9bef5346bc93e63944d360e0d",
+      "git_blob_sha": "b6597373a77b7b9554977f406fa44f22e83b1d61",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/CAFD_method_results_20260905.md",
+      "size_bytes": 29801,
+      "sha256": "b80a19ef3b09c4dab5efa850644439fe867d2c2b7e377302ea0857ab12a5cab9",
+      "git_blob_sha": "898003f3f5b8ab18030368a5bf2f7083829dd71c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/cafd_mistral_support_v9.md",
+      "size_bytes": 3119,
+      "sha256": "24277b7f4e83106c79b2ab65dcdffa5d02dbc9b339690d6b7dbaaf7e98cc91cc",
+      "git_blob_sha": "2c600adff56e8fd58d8a222cb4543245ac435413",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/kd_retention_replay_s2027/CAFD_KD_RETENTION_FINAL.md",
+      "size_bytes": 5356,
+      "sha256": "8c569933977d3c7658698596f42c5ce298dcb32ffa020a82272ebd4ab55d2b8a",
+      "git_blob_sha": "8c349f64a595906a544b83847f63137a2cf97220",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/kd_retention_replay_s2027/CONTINUE.md",
+      "size_bytes": 3454,
+      "sha256": "9bc02d669f8cc10860cd5a8f205d881eb0d8434f4a154f6f017b9480218943b4",
+      "git_blob_sha": "51b95a254cf5867dca604e96a262fd69e11c7cb1",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/kd_retention_replay_s2027/DELIVERABLES.md",
+      "size_bytes": 2134,
+      "sha256": "08610e66ef3bad149b6afedf9814b7c8cf85a13d46d10fc0b469b5fc054c7203",
+      "git_blob_sha": "8461f4f0486e41a874ac46b48d3948a8c9d48366",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/kd_retention_replay_s2027/FINAL_SUMMARY_ZH.md",
+      "size_bytes": 5037,
+      "sha256": "545aa0ef095fd986812c97cfced1a302e39b29728876264db858e39b9f698000",
+      "git_blob_sha": "ccfd5e3d90ebb1c99af0673945012d42baa376af",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/kd_retention_replay_s2027/execution_prompt.md",
+      "size_bytes": 11263,
+      "sha256": "425ce10f32333f9b1083296689ddee2ee8a1167580464e996b26fe5f1b46c0b2",
+      "git_blob_sha": "89518b55a0e0083b4ca255196837e3ccf538b5ac",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/kd_retention_replay_s2027/final_comparison_audit.md",
+      "size_bytes": 1508,
+      "sha256": "956f79259b31983c208f8b533fc72a56f70a3e535c3a794144ea4cb7e799a3c1",
+      "git_blob_sha": "50b0e1a9e62b11d9d2e9e2f17c342b81b99767fa",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/kd_retention_replay_s2027/final_training_audit.md",
+      "size_bytes": 2063,
+      "sha256": "fa45bb3b74994dc54ecc124732a34b13345b684f7c3a37158e4ef7195297a423",
+      "git_blob_sha": "a44d3b0f8eb51094d98a6c940a38e8fd0e86a16b",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/minimal_baselines_s2027/CONTINUE.md",
+      "size_bytes": 8333,
+      "sha256": "f3527069b1fcf1ef83d4f326b0b0b8b640ea40f1366f567124277ad47f99297d",
+      "git_blob_sha": "0658c375891f792675e1f118aa8fd74738887e7d",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/minimal_baselines_s2027/DELIVERABLES.md",
+      "size_bytes": 294,
+      "sha256": "a77b37e069e9498f79c7e77d8115662b1e5921ba6066f1a8a197076e8d7d6314",
+      "git_blob_sha": "e8f59dedf7d955421b228c1d4ca0fe56ab763479",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/minimal_baselines_s2027/FINAL_SUMMARY_ZH.md",
+      "size_bytes": 3219,
+      "sha256": "e6ae8afdb0eb20af7862074d13a79da7e30c1527ee60eccca6e79eaf91689137",
+      "git_blob_sha": "f2b0032d212214c540fe2909af994f867a637d82",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "reports/minimal_baselines_s2027/MINIMAL_BASELINES_FINAL.md",
+      "size_bytes": 2463,
+      "sha256": "13c3b6619d678291d56660f8caaaa71a28269530fbf6a6841c4efba9f56aba68",
+      "git_blob_sha": "033ebddfa0f75bb7b1ceaa933b0b6973f36a5b97",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/compact_completed_storage.sh",
+      "size_bytes": 5886,
+      "sha256": "b04ccc9ee0215a362df16173c9f7622166d696ac57106cacb6a744e4d537526e",
+      "git_blob_sha": "0d3f926e5c330361201cf9d9f39fa9826dad3e85",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/resume.sh",
+      "size_bytes": 878,
+      "sha256": "b97c9f4cf1984143b4496bcf18f00594d0e90dc57038ab14ee3636d1a64cf38e",
+      "git_blob_sha": "27057ea84a64625babb2c825ad1bb0d51570b115",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/run_minimal.sh",
+      "size_bytes": 1279,
+      "sha256": "da9b639c7e88dcb4e48435c2c256391e48d53a62e490ecea73825bba8547e364",
+      "git_blob_sha": "77e3ab609815edd8889c7e0d302cc1312191d416",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/cafd_only_v5.sbatch",
+      "size_bytes": 2473,
+      "sha256": "4f7f38f6d9f203908146c23641dd19ac716ef0950dc1e5909ea8673b0cae9198",
+      "git_blob_sha": "78788097122767903ccb52a22bf35f46fbc8bd02",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/cafd_v1.sbatch",
+      "size_bytes": 4058,
+      "sha256": "e195067483e147f8684f42dd6cee41dee9b1e1c161b9359824ea163077afa22b",
+      "git_blob_sha": "a32801c8991133f40e23342e51cbf22b181582c7",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/capacity_diagnose.sbatch",
+      "size_bytes": 913,
+      "sha256": "24486da68d53e14076cfe3dd9c8e73df2cacb80c49989f0203045218571a2411",
+      "git_blob_sha": "49820900014f151758f0de7373638bd386714fd2",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/capacity_gate_v2.sbatch",
+      "size_bytes": 1019,
+      "sha256": "b4847763376afb65115494b01f8d3dbcf06a168b28373dee5882361040d17e93",
+      "git_blob_sha": "dfb1da98b1fbd000320ef767d2e13d47546ac7c1",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/chat_hier_minimal_v3.sbatch",
+      "size_bytes": 6819,
+      "sha256": "e1348c31733e4ad789d0539913b8babedb18ce2e13955e9f21103b5fe981cc0d",
+      "git_blob_sha": "1a0be000382c59b1a94be79601686266a619f8b5",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/chat_hier_v4_sft25.sbatch",
+      "size_bytes": 5638,
+      "sha256": "60b51b9468c4029345f8ff186c5ae61b4114d31d71bf1035bae02bc653221728",
+      "git_blob_sha": "33d3fa7bc4ea2fc48416877364286889713ecca3",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/chat_hier_v4b_finalize.sbatch",
+      "size_bytes": 4476,
+      "sha256": "541e1d424847104e8ccf8edf8d247fce918d827f39f9ad279f71142f14f6162e",
+      "git_blob_sha": "a3f3b0d7df23199e3debe771ae2b92ff0adeb7c4",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/chat_hier_v4b_resume_students.sbatch",
+      "size_bytes": 4232,
+      "sha256": "0690caf6e41bb29e3f05f62cf906bcdace2bbc22d6b5ad3a34059aac3062950c",
+      "git_blob_sha": "ad5cb5700445901d6abfe1c1e5fcb2e4dbf79a43",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/chat_hier_v4b_sft25.sbatch",
+      "size_bytes": 5756,
+      "sha256": "1a17e679bdb2665dcf2412e326c3d714c85880aaf2ab245b4cb9e871a2909322",
+      "git_blob_sha": "db9db71249e2cbd64597939d07eba473bf827674",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/kd_retention_formal.sbatch",
+      "size_bytes": 1963,
+      "sha256": "f21df2102aacdf96b51acf82d1121e84aa1f0757e42beee38d9c4909a1776fc7",
+      "git_blob_sha": "34ff7155a79d4db95262b9694b546ffe61b77bfd",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/kd_retention_smoke.sbatch",
+      "size_bytes": 1189,
+      "sha256": "5e302d6f0e937dee6a342ad2918e6b3bc31da50c6d20de295d5607c7977a732b",
+      "git_blob_sha": "c846bcb58caf9682f7d1c8634af98310cc991dec",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/kd_retention_test.sbatch",
+      "size_bytes": 1235,
+      "sha256": "ad915225e446abeff092f99b7be91af69fd4870c8e0bb920353437956442525e",
+      "git_blob_sha": "259f1bcb796f7252ff49a101bb16b0f5b05afd36",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/minimal_absolute_kd_formal.sbatch",
+      "size_bytes": 1427,
+      "sha256": "b8aeda6d2776369d2ab32e614d58110b817edcdf927dab61124e38149dc8d37c",
+      "git_blob_sha": "c5aed86b42f516e90563f0d088b4b90b8135d215",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/minimal_absolute_kd_smoke.sbatch",
+      "size_bytes": 1130,
+      "sha256": "f99b4bfb9448bbf47b040d5e9a5ca1bc3ea934a58bfd93eb561fcba503a817c6",
+      "git_blob_sha": "093c1e1847defee53327d85aa1d15b5601d80702",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/minimal_grpo_formal.sbatch",
+      "size_bytes": 1378,
+      "sha256": "8e3703c54f1fb162ac835ab52de57fa3c6433bf9b9ecfc072181ba8427df3b91",
+      "git_blob_sha": "e2b819470f10ed054e745043a7f843ea1daae02e",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/minimal_grpo_smoke.sbatch",
+      "size_bytes": 1095,
+      "sha256": "27855238d374bc44e8884711555a88904c3fd1ecfeaf3d1e107f2618129f4056",
+      "git_blob_sha": "24bf65335c79075058a74c61707b5d6ba61d0c33",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/minimal_s0_test.sbatch",
+      "size_bytes": 1075,
+      "sha256": "04b96e0ae1bc769a9b494efd89499b49b51d043262ddb9f5f12dc1d6a9444796",
+      "git_blob_sha": "b9803964a452aeb6ee0d5f6db5c3316e0b5988e4",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_acquisition_observation_v11.sbatch",
+      "size_bytes": 4515,
+      "sha256": "ddef0f6068ab5e4a1fcfa1eec4169dae8648028fe2321a834e354c3e82f74061",
+      "git_blob_sha": "c4ab33384ef2390e8b5859e164da2ba8f8b651fd",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_anchored_v14.sbatch",
+      "size_bytes": 1238,
+      "sha256": "b372882aa79c214d4054c530841aa7de55a00684ed7cea4e28a96e40a4f74e0d",
+      "git_blob_sha": "35496dc7473922a23c794e13f7e514961e9eb2bb",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_baselines_v12.sbatch",
+      "size_bytes": 3663,
+      "sha256": "5cd2b3d835917dda64b6b029f6d17f1ac266048fe5dc6807f277ac46a1a65740",
+      "git_blob_sha": "e739a40ed61f2d3cb03f4b2fa8d7d6e800ae8a8d",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_cafd_support_full_v9.sbatch",
+      "size_bytes": 3980,
+      "sha256": "87433c4fd0f70d0a00ee00d7ee4a3e71d2feda10dcf7401d054d45c053e9a09c",
+      "git_blob_sha": "14d404080f76916767eb3053b742ebf637d2ab88",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_cafd_support_probe_v8.sbatch",
+      "size_bytes": 3476,
+      "sha256": "c04fc1bc8cbc2f2e034758c2bc7c3db1f4a3465ce52fc013ceb903fcf4fb1eb1",
+      "git_blob_sha": "fa746d33fd342db2f9dcc679020781b5440aeac4",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_cafd_v6.sbatch",
+      "size_bytes": 2791,
+      "sha256": "8859c34e49ad0e36a3d73483af12c8bb8e0cfc2f958c0e7d683aa007d9a429c3",
+      "git_blob_sha": "6a753559e097d1d4226823548d365af1cb678f11",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_direction_v15.sbatch",
+      "size_bytes": 908,
+      "sha256": "4d90a69dfac71dae150f58898a1d4250aa173e24f7a80d4f155d1a6c9ec7ded6",
+      "git_blob_sha": "1fbf1c09f6ac28e1d13e4438e533d40208b8e366",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_disjoint_cafd_v7.sbatch",
+      "size_bytes": 2806,
+      "sha256": "c28ee457fa59b98b66438658d63f633121fc12eb5a8b362e38d48b5d0dfd5399",
+      "git_blob_sha": "4a149f94f2de26f474acec5de636cc14ffcbcacc",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_disjoint_route_v7.sbatch",
+      "size_bytes": 3815,
+      "sha256": "3fe6d595db325d00db5aec970a23e0e36745cb3eb10c2e6a2acda6c632e8125b",
+      "git_blob_sha": "4c9d2969eb9a620fd2afc553c3b2fe4fb54cbd42",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_generalization_v10.sbatch",
+      "size_bytes": 4760,
+      "sha256": "8728b5e7f2abb1a2dc5fc4eb35166d5b95de08fb97361adfa35fc3bd827c90cd",
+      "git_blob_sha": "e2adc94f165d6f490d0b660d1451f45da65c1c7c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_route_v6.sbatch",
+      "size_bytes": 3801,
+      "sha256": "847a4b9917367dc8d0fa7299e3f5f9fac5ccdb249628cce170aac3afd68f9e59",
+      "git_blob_sha": "25d66c299e04fb1cc912bbde4fc1c868e2e112c7",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mistral_target_audit_v13.sbatch",
+      "size_bytes": 1231,
+      "sha256": "c4b27259931a9effc4d7d3a60349715ef7eecdf8a82d605dbbc591ad48030bb7",
+      "git_blob_sha": "0027e78949de9bc87d3d6ff5eeff30cbee99fc02",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mpc_v1_formal.sbatch",
+      "size_bytes": 1079,
+      "sha256": "e677c2b1d573e1bf1ed05c533c838ec5e5523afa946395d1bfb9b30afc4cd7bf",
+      "git_blob_sha": "6ee679a0d7e7d813ec1fed9e1e43354d1d5d47ab",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/mpc_v1_smoke.sbatch",
+      "size_bytes": 988,
+      "sha256": "d086c5bd1dbe10e45f843499c2c367e1c413a5236603b33f6964aa27752a3409",
+      "git_blob_sha": "18bb3a71e157eb1555c34fcd3ff26564022d965d",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/renderer_gate_v3.sbatch",
+      "size_bytes": 1234,
+      "sha256": "27506f17abf4065443fabca12548fe3770b010fbd8c892cf8eeeb46d8936d5bf",
+      "git_blob_sha": "e6b6f3f1955b21cbacc6bcb6c8fc97c03a81667e",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/target_path_t1t2.sbatch",
+      "size_bytes": 1661,
+      "sha256": "dc8864850766475fd843cbf0716e86e8d2b38d0f2e2ce8f9e46b42a5f94d9e27",
+      "git_blob_sha": "1abe71cdadf54f4e0e503b0b2e6f290bc12bc4b4",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/teacher_capacity_v1.sbatch",
+      "size_bytes": 2786,
+      "sha256": "dcd5d543269483c39f3db519e95b35844d45f925ae772450dbfb68488bfcac1e",
+      "git_blob_sha": "3be6886a84fbd3716a38f81f9a4fe45e127872fa",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/slurm/teacher_matrix_v2.sbatch",
+      "size_bytes": 4754,
+      "sha256": "43905b9c61e9e988fd6e3c371112c35a1ace38439caa0c88947333be7cfbb21a",
+      "git_blob_sha": "28507e34642c1a44e5b1f75138d30dfd028ac79f",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/cafd/status.sh",
+      "size_bytes": 877,
+      "sha256": "d8c349c9251b35c395d13a0ca603da8c37dcb43ec47462fd499029413a26f746",
+      "git_blob_sha": "5e6fa0283c9de648119cd665a97869c6e193c55c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/bootstrap_env.sh",
+      "size_bytes": 807,
+      "sha256": "78db168c5ad9881afa9dc7403da2d5ac66b3c1d9ae12d9af5b65e67eda6a0b0b",
+      "git_blob_sha": "bd465d55ff4a8e648f589cd6f1fd6ecb4872dd9c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/common.sh",
+      "size_bytes": 798,
+      "sha256": "5e3dea09f089fd5642548858e5d6dc4e1ecc9d70eb4404528c6ed3e4d23e2dee",
+      "git_blob_sha": "65b5c46332fe7bcf548fcdf2043ddfe4f39f8a83",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/resume_all.sh",
+      "size_bytes": 191,
+      "sha256": "27a0173dbd157598cd7069f774904fbd61f843410d9ce13e8133a9ed8367f3d8",
+      "git_blob_sha": "fe1b6e8bb74465240cfb5ea0be707e367b5e2781",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/run_all.sh",
+      "size_bytes": 148,
+      "sha256": "fed1b1e52a661707de3f2310dd95e060fa6099c52c7b41608d5f508306231efc",
+      "git_blob_sha": "b3912a72fbe2064ab844d7210c1353e96813cb7a",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/bootstrap.sbatch",
+      "size_bytes": 439,
+      "sha256": "99339d5389d37e3fb47b21bc10f9dbd97369faf1dcd3ba48d80ab0fbb119728a",
+      "git_blob_sha": "aa068efe39d1af36bbbd8c323cb61e0b6ca4e7aa",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/cpu_gates.sbatch",
+      "size_bytes": 686,
+      "sha256": "2cc862e4a612d21cf561e02f999570e654487d37b5db9abb63eee66a643a0c7c",
+      "git_blob_sha": "a84858380d1aa3a0259800b616e4f97e2e48c248",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/hardware_probe.sbatch",
+      "size_bytes": 195,
+      "sha256": "c6d1d7c8f825bb84a16881bab4a314abb0450b3eb93b41af0a90389bb414cfc5",
+      "git_blob_sha": "72f7da67ff7d4f69b3a664c5b95d95c7e6f4593b",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_direct.sbatch",
+      "size_bytes": 206,
+      "sha256": "0a357097e09b0bcba020c524c72311250c8799f480c6be3b933f5c6da72ffb8c",
+      "git_blob_sha": "0abbfd326c606218a0d9902b25b34b01d283b33a",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_final.sbatch",
+      "size_bytes": 143,
+      "sha256": "f31962b69070f64a223c1335ea6057db271e02cebea4d987d12781e75915fcff",
+      "git_blob_sha": "c551bee239e2275475fb0f9a1f6b35819add03c9",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_opd.sbatch",
+      "size_bytes": 203,
+      "sha256": "1fa87cd4109fe16e02ce1422b91dd2e38bc152a728c985710b86a9a77d5c8762",
+      "git_blob_sha": "4bf49806f74d83ebae881bfc3c251d41ab8ffd8a",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_oracle.sbatch",
+      "size_bytes": 206,
+      "sha256": "474f8d34cc9697f0e74a2ca67b02afd70c5e4c196b0d473066791e00c1ae15a5",
+      "git_blob_sha": "a644e181b7e7a8dda1acda969ee1643f70fc05fa",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_prepare_oracle.sbatch",
+      "size_bytes": 951,
+      "sha256": "a3f3b094585038896376ce77677b6b8e42579990415bbfe5fd64ddd976b6984c",
+      "git_blob_sha": "c72b728aa6051b8fcf340c899962805e43a196c7",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_teacher_development.sbatch",
+      "size_bytes": 157,
+      "sha256": "982aaf89825787a17d3fb16fb893448aa2677302d4718b7906ff33233c67061f",
+      "git_blob_sha": "4520c5049861b87837d352e35645025f1e47370f",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_teacher_recovery.sbatch",
+      "size_bytes": 210,
+      "sha256": "b351bcb662b437fbb561fdea235014eaf0b3d8cc8b449204eefe5b1a799f5234",
+      "git_blob_sha": "45203daa5f859aee0c13a2b023a1d73a9f041049",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/minimal_watcher.sbatch",
+      "size_bytes": 502,
+      "sha256": "62eff7dc0e0697eb2f3601edc8427ea7eeaf674a771552319f71db77b39694a8",
+      "git_blob_sha": "ca8e3d85dbb6eef1cd6f1954966455be28b2ce53",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/qwen_math_capacity_control.sbatch",
+      "size_bytes": 351,
+      "sha256": "7dc41187eb1377a0ac4e2ce03e545010e38e677a752027296bfdf2c068f2e095",
+      "git_blob_sha": "32dce98ad3fb1ab3d7a65eef17d9f5c8a7d21047",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/qwen_math_direct_rlvr.sbatch",
+      "size_bytes": 348,
+      "sha256": "ae2a7a8dc713e2179ae06f5260e44b66e7d0b62e9c28e07ec3c9961251599664",
+      "git_blob_sha": "070a775f8e0957aa9ea851ce0ad222e17772089d",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/qwen_math_endpoint_gkd.sbatch",
+      "size_bytes": 350,
+      "sha256": "3d99bd7828af4cbf03bdc5ef9f5ad1f1b43ac15532ee698c68dd4fe9e7a17ca0",
+      "git_blob_sha": "3e2ffaa466bbf5c7e12dcaba9577dbbc6d389a6a",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/qwen_math_progressive_gkd.sbatch",
+      "size_bytes": 356,
+      "sha256": "94a06ce10b4173fbbbf970da3bb908d5b05c3eee93e259323fe04b4a75d14789",
+      "git_blob_sha": "e8ff62f05ce122b41a93c829a6dbf4eb57656532",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/qwen_math_teacher.sbatch",
+      "size_bytes": 261,
+      "sha256": "71b2c945f214be49f6a7887055b3b7759816367779865dd5e9c00a75fdead920",
+      "git_blob_sha": "3a0a0076e84ab0fa5b5bff3bc5b2dfc6b8c3c7e3",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/qwen_math_teacher_responses.sbatch",
+      "size_bytes": 771,
+      "sha256": "834be5c6df916e102269f3fa9e443811e1537800a5447504bee7c96bd3fdf36a",
+      "git_blob_sha": "e0ed666e434cca44090fc6315583ecfa5ab21f67",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/qwen_math_teacher_rft.sbatch",
+      "size_bytes": 336,
+      "sha256": "11e6f1be5d3e92c33a8173709a9274cbad058ed75b223b62c5865b995803049d",
+      "git_blob_sha": "f927c97d1df529f436e544eecca36ff93ec83bef",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/slurm/watcher.sbatch",
+      "size_bytes": 427,
+      "sha256": "3221043094165c55152a73aa2bbf4526d2ace134e7c7e0dd34e94cd3fc67d846",
+      "git_blob_sha": "bc7d89718725d683f428332ed5a55d8d86a9abbc",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/status.sh",
+      "size_bytes": 206,
+      "sha256": "ba5f8453bc190cad15a043b644121448c44865c86d5d8302891933e47806af2f",
+      "git_blob_sha": "f829bf60f2ec6180cc27ae7ca0d9abd4efa7f815",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/summarize.sh",
+      "size_bytes": 139,
+      "sha256": "d31fdbc588192eddafdcd7fa601943dd124be4e6e20cc117119cf2c93fac3846",
+      "git_blob_sha": "edd1bf9f739ab43b52aa2b587a46890ba07b3e21",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "scripts/gap_validation/watch.sh",
+      "size_bytes": 168,
+      "sha256": "46681cd5198454b4acecac4fc0f595f1e412f533eed7a9977db39a4d439b8dbb",
+      "git_blob_sha": "32bf5223a876ec7fc7975ef80fd3d7cfa6508150",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_anchored_target.py",
+      "size_bytes": 3896,
+      "sha256": "c87d5bc1bc591a1027682f75e50697b4739d3462864aba91ef5162122bb4b522",
+      "git_blob_sha": "93e7f29c9328f53ceb5c5985e449dcf1af8f1c06",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_direction_v15.py",
+      "size_bytes": 1027,
+      "sha256": "724a7655a1120ccca5635a89b0964376a7a281de0ed7c911d59651824b34e092",
+      "git_blob_sha": "13cd24ed17ff2a29445f29bbde9bcaeed7df710f",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_exact_forward_kl.py",
+      "size_bytes": 7286,
+      "sha256": "8e9cd6258617175b7e2a17854d8ac611c99ddb7008b414607e024777850d8ed0",
+      "git_blob_sha": "55d3583b501d0c3b88bfcbfc8b304d33d3ed66e1",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_finalization.py",
+      "size_bytes": 779,
+      "sha256": "07464dd7d065e0347fead40d47837cdf9a60047ed2dec1aeb911bac51663e409",
+      "git_blob_sha": "0fba01ad3c9271673e1820be5d9c9e76099be2c0",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_fixed_path_kd.py",
+      "size_bytes": 7952,
+      "sha256": "2a718cd8e68c40d157ca77f9bda660a7869f1ecb0e59efd892a8166fd1d2c4d8",
+      "git_blob_sha": "880461cf0149b4b04a174af819e1119875692e02",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_generation_processor.py",
+      "size_bytes": 895,
+      "sha256": "df24756767a3e75479c81bbe381d672708ac2136ad41a8ba62a5a0dd2ab76967",
+      "git_blob_sha": "40e544b3a6391bf2aa7641552c13c82b0e6def45",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_kd_retention_finalize.py",
+      "size_bytes": 14732,
+      "sha256": "35d0d3d04692b9a5a5b2e80b14174a3828067da9148f0217e60fd900affd9b76",
+      "git_blob_sha": "6500b13e5c14a0d07c5e358589476621d423d830",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_kd_retention_report.py",
+      "size_bytes": 11875,
+      "sha256": "f248e33fae63d873430124b205efebf0ed9af1fe6ee158d0f244f8fb98022f20",
+      "git_blob_sha": "ff1e4ffd48ae4d42c97ed8a95ac9dce7fcb00876",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_kd_retention_train.py",
+      "size_bytes": 16837,
+      "sha256": "c92f3735528a2a7fe00b4e91ad5193c1c1594cb6d4827a63ce09f126dd5dadf4",
+      "git_blob_sha": "fb2f7d9ea565c636131b7e6acd71cee3c608cc3a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_minimal_baseline_finalize.py",
+      "size_bytes": 24251,
+      "sha256": "1f9611197c751c2b1c67d5c0cc5e598804e1ceb11ae4f4b531ad0d4dc484a964",
+      "git_blob_sha": "55560bc3ca947674b13fd6f7e3802cde1dbf3dd1",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_minimal_baseline_report.py",
+      "size_bytes": 13772,
+      "sha256": "14b1e96be5e2579f6decaf0f7f8a14c6c48af43782eef50d1e781e929d83922b",
+      "git_blob_sha": "2896adcbe81f4195885886f1510e19cf078de9ab",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_minimal_baseline_train.py",
+      "size_bytes": 16349,
+      "sha256": "d36c4424b35ee00162936a285689f1f63cf7cb103a142a1c042c04dd736d63f1",
+      "git_blob_sha": "2b50f2bda2f0ac08b31ce81d63b26fa4852f416c",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mistral_acquisition_observation.py",
+      "size_bytes": 2528,
+      "sha256": "a29d2167b543cffc1ffc7be517ab4db2d4c9ff61ddba68eaa165e5c01ad1f37f",
+      "git_blob_sha": "854776c92343f87dcfc06dd7fb6466b86db0edeb",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mistral_disjoint.py",
+      "size_bytes": 1169,
+      "sha256": "78a1cd8804a1e6c5094f365bfc1b6ae50e3e935c99adde77202cd095f0893c27",
+      "git_blob_sha": "799bb7b7f5272bd2855504004ee6f2eca9cc3716",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mistral_generalization_v10.py",
+      "size_bytes": 4080,
+      "sha256": "6a7bbdc38c0e20fd641e6da6da35a159a7044ff00845aee1cb7b74f0b22821d6",
+      "git_blob_sha": "95d2ce88196febc6209d35523a89ccbd62856e6e",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mistral_runtime.py",
+      "size_bytes": 1018,
+      "sha256": "6f634c01e0c519ad411601fbfb83f7351a7dac49609552a25697888710da5d0d",
+      "git_blob_sha": "8c143c4db613a8bca0c81c702703c15651258b16",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mistral_support_full.py",
+      "size_bytes": 3580,
+      "sha256": "1ac1a8c38769e7846c1244467bd4774bdf3c68ec8dc2d81eb6916c7bc4d77938",
+      "git_blob_sha": "9fbfa2c67f46cd998bf242400b52148f5bb6e213",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mistral_support_probe.py",
+      "size_bytes": 1230,
+      "sha256": "f271eeda87a890478f2b98f588140bac7cb4da2fa1ddbc2e2dc929fc0f687ee3",
+      "git_blob_sha": "dd0717a5f78f01e2386f705125761eec1e02736b",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_allocation.py",
+      "size_bytes": 3036,
+      "sha256": "fb91a950e6e3f81f4bf198b80c41932154894a65240baf06f63cc60c27d75246",
+      "git_blob_sha": "80c1f8ea0815d8e7f977008cb90b3f24b363379a",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_controller.py",
+      "size_bytes": 10409,
+      "sha256": "40eba2647802df081f82e5d804008cefad2cfd7026f4231b4365803766f868af",
+      "git_blob_sha": "ff1b7ec7fc4294e761c0e351aa1cf56ae6acc427",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_data.py",
+      "size_bytes": 9628,
+      "sha256": "2f9f067f650c438ced8dc7aa61887a4617385b5d3f10a061e39047ca571afcb5",
+      "git_blob_sha": "c0708a10f61f787bafae18777749fae587ecffa8",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_finalize.py",
+      "size_bytes": 12559,
+      "sha256": "5f396b6dc3e7a68a3bbef07bda3e4b43ab1dfa35ca0f8e347cd0d5de1ffe1f26",
+      "git_blob_sha": "57433f0181a12371126d7afc3a64b01cdd2f7b00",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_ledger.py",
+      "size_bytes": 7973,
+      "sha256": "4c3e050d36939a33087fb48ed8e8939adb28d44285783cfae1ca761839e26c05",
+      "git_blob_sha": "107036d5f086b550d409e149c6b251d471caafe5",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_objective.py",
+      "size_bytes": 13762,
+      "sha256": "a1696a3e475673a4307c3de19d2096bc5ebe28d9cba61fea3b05767f034f7d79",
+      "git_blob_sha": "9e3ba64d876f9765526361d1b600022678d5b1e0",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_runtime.py",
+      "size_bytes": 16035,
+      "sha256": "68859df7f77fa62bcb47a0b7fea347ce30e3d24153370c5bad624df7aa04f082",
+      "git_blob_sha": "ae99c389a3de0a3e4853c281cca2ce27710e9063",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_mpc_train.py",
+      "size_bytes": 11256,
+      "sha256": "1bae9beb679b7df9ab7097b6d66cb6cd1f37f5a81c7b77f2bdb307ebc0d8dd98",
+      "git_blob_sha": "45373701c446fee7bfe2773c32ffea96170eeaa0",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_optimizer.py",
+      "size_bytes": 1290,
+      "sha256": "937a5958505d4042c44a768d0445b658ada93e3680d09e48d1122eede23dfe7f",
+      "git_blob_sha": "a27f308f503d4764a824fc0331feb9d142926531",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_prompting_reward.py",
+      "size_bytes": 1981,
+      "sha256": "d4577ae2bb5aeb99d5242b4a6b015928de41eebcf8da4907041195aaf4b45217",
+      "git_blob_sha": "b20179fda7a2fe5e865c7651b2df16c1236bc109",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_relative_target.py",
+      "size_bytes": 2483,
+      "sha256": "1d9a8c52e0e879faef5fed40af01eb58c75f7571cb0977463a7778b36ab523ba",
+      "git_blob_sha": "a408247e618c6caf3b23bce76514b9593beaa062",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_resume.py",
+      "size_bytes": 8313,
+      "sha256": "27718a3e15d29c0da72b0ef8bd8958061cd23476e29bc8735c7569d948e2c6a9",
+      "git_blob_sha": "0cee2f1216ad32a15adb0ea22befb275d1d01fb3",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_student_batch.py",
+      "size_bytes": 3609,
+      "sha256": "670748d7c1824329a8c9e0ec68b07d58b680dbfe2fe88ce6ba90c3bb64a34f9e",
+      "git_blob_sha": "1ecea15bbf2697922ebcabd4a428025c259a5ac1",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_target_path_prepare.py",
+      "size_bytes": 3502,
+      "sha256": "269b0cf4d910407995bbaf3f90c06ca395018df00bc7d181815ed0707c89b84b",
+      "git_blob_sha": "7fd85154b2ee3955369ca600973e4e83e5e0e588",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_target_path_report.py",
+      "size_bytes": 13326,
+      "sha256": "c7555f517a07836773f6deb638508c7bcd1c3363d114ceb8a9d81ffcb335863c",
+      "git_blob_sha": "a7415a664336504f2a4f8812daeddac2443a5a1d",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_target_path_resume.py",
+      "size_bytes": 4453,
+      "sha256": "b9cd22525c162bca372d1f02b3a35b8a22319e1bc6364b0099ff63d54d6cbd1f",
+      "git_blob_sha": "3671c229056a66dfc6212992e0113859ad78e3d3",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_target_path_t1.py",
+      "size_bytes": 7263,
+      "sha256": "a4af0162cf1ce790a674642df4113672f856080bdccb5c52fbd1b92a78911538",
+      "git_blob_sha": "96937bfd39b808ac627407ded8e3fb48f0e686eb",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_target_path_t2.py",
+      "size_bytes": 12649,
+      "sha256": "7cc416f5c8b07fd4a1742b57895a70a1be9579deed9e8fd63f2d4a15c0aa2b16",
+      "git_blob_sha": "dd2cfc261c0c6b4ecabb82cfcf899f8e50d0acea",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/cafd/test_warmstart_gate.py",
+      "size_bytes": 278,
+      "sha256": "ab29361a1368e185845c3402ac77d7e833455ce180b6e88f1a32edda2589029d",
+      "git_blob_sha": "9ce2f10fa8e14f95a631b8f44c08f8e7d5660cc0",
+      "mode": "100644",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/gap_validation/test_checkpoint.py",
+      "size_bytes": 1122,
+      "sha256": "fa43d18aa2f92a56ed965319f0f54ad09f7cbc311d9519a4ea97b5457069fe54",
+      "git_blob_sha": "6fa6a2deabc924f241626dde4c6349c13c1d5674",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/gap_validation/test_kl.py",
+      "size_bytes": 3583,
+      "sha256": "769b1f83f8721a362ec597525c79f3523b333e8bf390399ca6ecf8e1eeb38637",
+      "git_blob_sha": "ae5e66ad4e6a2fbcc8dae8c0d90d4b685ce53d4c",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/gap_validation/test_minimal_gates.py",
+      "size_bytes": 2301,
+      "sha256": "1b2f7a915d4ecd3fae908f35270bf02010593c9b09c4e6408c6690f499cf0f3b",
+      "git_blob_sha": "fa461d32c67f2398bb80445b670946a747d2a802",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/gap_validation/test_minimal_overlay.py",
+      "size_bytes": 1239,
+      "sha256": "b9839924dc4542aaddb2495364373d750bcdcf585cb1855532bec72a6378a89a",
+      "git_blob_sha": "815572cdd8baed4b41316b8641d2e8acf9409c54",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/gap_validation/test_splits.py",
+      "size_bytes": 1148,
+      "sha256": "54b8a98540761a94de5635d0256cb5cc380bb7b7b48a58d1f8b3ccc65cb3ecd1",
+      "git_blob_sha": "c299acd9a127c13158b6dc237760923a61a112d4",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/gap_validation/test_teacher_responses.py",
+      "size_bytes": 1317,
+      "sha256": "f37c1316a5cca7e533922437eede556a5e3e14b173a4c1a6209354f28da44298",
+      "git_blob_sha": "a7a03f6bf59e8e8aba26148e283bf6b32a1427be",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    },
+    {
+      "path": "tests/gap_validation/test_verifiers.py",
+      "size_bytes": 1801,
+      "sha256": "9381440f3307264efa256b0eae87bdf48f685991d9c13ed4c1042c09ce775e25",
+      "git_blob_sha": "bf0d06576ce4a878034f3cd096fb86820fa7bb2d",
+      "mode": "100755",
+      "tree_matches": true,
+      "worktree_content_matches": true,
+      "worktree_git_mode_matches": true
+    }
+  ],
+  "gitlink_checks": [
+    {
+      "path": "vendor/OlymMATH",
+      "expected": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "94e19ffb8b7b7abe0f10f0015620c2e1eb57bf67"
+      },
+      "published": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "94e19ffb8b7b7abe0f10f0015620c2e1eb57bf67"
+      },
+      "matches": true,
+      "submodule_initialized": false
+    },
+    {
+      "path": "vendor/evalplus",
+      "expected": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e"
+      },
+      "published": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e"
+      },
+      "matches": true,
+      "submodule_initialized": false
+    },
+    {
+      "path": "vendor/open-r1",
+      "expected": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "1416fa0cf21595d2083b399a2a0bbddd7f6e9563"
+      },
+      "published": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "1416fa0cf21595d2083b399a2a0bbddd7f6e9563"
+      },
+      "matches": true,
+      "submodule_initialized": false
+    },
+    {
+      "path": "vendor/opencompass",
+      "expected": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "20586a24844c5289155d658d641ee8c1e7f8fbf5"
+      },
+      "published": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "20586a24844c5289155d658d641ee8c1e7f8fbf5"
+      },
+      "matches": true,
+      "submodule_initialized": false
+    },
+    {
+      "path": "vendor/trl",
+      "expected": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "67dfbe211a07a8dd6ebc1a5af5b75152e10add8e"
+      },
+      "published": {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "67dfbe211a07a8dd6ebc1a5af5b75152e10add8e"
+      },
+      "matches": true,
+      "submodule_initialized": false
+    }
+  ],
+  "published_extra_paths": [
+    ".gitignore"
+  ]
+}

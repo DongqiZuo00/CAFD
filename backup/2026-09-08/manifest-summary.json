@@ -1,0 +1,13 @@
+{
+  "archive_audit_status": "passed",
+  "archive_path": "/blue/du.j/jinjiaguo/CAFD/backup/github_20260908/working-records.tar.gz",
+  "archive_sha256": "3e2973a7560d6ba3e9b989c0379f3c7951e3fa59dbc0b8a678e951d76030e126",
+  "archive_size": 386255808,
+  "bundle_path": "/blue/du.j/jinjiaguo/CAFD/backup/github_20260908/original-history.bundle",
+  "bundle_sha256": "fcf7555f8ba12e4b0c34c1b9d3af922519d89160e7306705e9384eaebccb367f",
+  "bundle_size": 255699,
+  "credential_scan_status": "passed",
+  "excluded_entry_count": 2113,
+  "source_bytes": 1929653192,
+  "source_file_count": 9163
+}

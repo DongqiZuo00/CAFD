@@ -1,0 +1,22 @@
+{
+  "archive_bytes": 386255808,
+  "archive_member_set_matches_manifest": true,
+  "archive_member_sha256_matches_manifest": true,
+  "archive_sha256": "3e2973a7560d6ba3e9b989c0379f3c7951e3fa59dbc0b8a678e951d76030e126",
+  "bundle_sha256": "fcf7555f8ba12e4b0c34c1b9d3af922519d89160e7306705e9384eaebccb367f",
+  "credential_scan_status": "passed",
+  "elapsed_seconds": 338.917,
+  "excluded_inventory_unchanged": true,
+  "finished_at": "2026-09-08T23:40:18.200914+00:00",
+  "git_refs_unchanged": true,
+  "source_bytes": 1929653192,
+  "source_files": 9163,
+  "source_hash_at_scan_equals_hash_read_into_archive": true,
+  "source_modified": false,
+  "source_stat_before_after": "all unchanged (size,mtime_ns,ctime_ns,mode,device,inode)",
+  "started_at": "2026-09-08T23:34:39.284056+00:00",
+  "status": "passed",
+  "uploaded": false,
+  "verified_archive_bytes": 1929653192,
+  "verified_archive_files": 9163
+}

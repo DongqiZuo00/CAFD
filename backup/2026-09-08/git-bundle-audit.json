@@ -1,0 +1,26 @@
+{
+  "bundle_bytes": 255699,
+  "bundle_heads": [
+    "518157ed07b30ccf02ca85e358ff334e65d7150b refs/heads/main",
+    "518157ed07b30ccf02ca85e358ff334e65d7150b HEAD"
+  ],
+  "bundle_sha256": "fcf7555f8ba12e4b0c34c1b9d3af922519d89160e7306705e9384eaebccb367f",
+  "git_local_configuration_included": false,
+  "object_bytes": 1474650,
+  "object_counts": {
+    "blob": 308,
+    "commit": 41,
+    "tree": 283
+  },
+  "reachable_history_scanned": true,
+  "refs_after": [
+    "518157ed07b30ccf02ca85e358ff334e65d7150b HEAD",
+    "518157ed07b30ccf02ca85e358ff334e65d7150b refs/heads/main"
+  ],
+  "refs_before": [
+    "518157ed07b30ccf02ca85e358ff334e65d7150b HEAD",
+    "518157ed07b30ccf02ca85e358ff334e65d7150b refs/heads/main"
+  ],
+  "replace_objects_disabled": true,
+  "status": "passed"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "path": "vendor/opencompass",
+    "commit": "20586a24844c5289155d658d641ee8c1e7f8fbf5",
+    "git_available": true,
+    "status": []
+  },
+  {
+    "path": "vendor/OlymMATH",
+    "commit": "94e19ffb8b7b7abe0f10f0015620c2e1eb57bf67",
+    "git_available": true,
+    "status": []
+  },
+  {
+    "path": "vendor/trl",
+    "commit": "67dfbe211a07a8dd6ebc1a5af5b75152e10add8e",
+    "git_available": true,
+    "status": []
+  },
+  {
+    "path": "vendor/open-r1",
+    "commit": "1416fa0cf21595d2083b399a2a0bbddd7f6e9563",
+    "git_available": true,
+    "status": []
+  },
+  {
+    "path": "vendor/rl-grok-recipe",
+    "commit": "8500bec984d4a84a4aa94ca3adc31c004aa6a388",
+    "git_available": true,
+    "status": []
+  },
+  {
+    "path": "vendor/evalplus",
+    "commit": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e",
+    "git_available": true,
+    "status": []
+  }
+]

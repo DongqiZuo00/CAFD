@@ -1,0 +1,105 @@
+{
+  "by_scope": {
+    ".gitignore": {
+      "bytes": 242,
+      "files": 1
+    },
+    ".gitmodules": {
+      "bytes": 511,
+      "files": 1
+    },
+    "README.md": {
+      "bytes": 908,
+      "files": 1
+    },
+    "archive/cafd_invalid_48x16x8192": {
+      "bytes": 11470976,
+      "files": 16
+    },
+    "artifacts": {
+      "bytes": 44687558,
+      "files": 167
+    },
+    "cafd": {
+      "bytes": 803909,
+      "files": 79
+    },
+    "configs": {
+      "bytes": 39228,
+      "files": 22
+    },
+    "data/cafd": {
+      "bytes": 15383188,
+      "files": 12
+    },
+    "docs": {
+      "bytes": 342673,
+      "files": 2
+    },
+    "experiments": {
+      "bytes": 176350,
+      "files": 49
+    },
+    "logs": {
+      "bytes": 6713237,
+      "files": 156
+    },
+    "pyproject.toml": {
+      "bytes": 1333,
+      "files": 1
+    },
+    "reports": {
+      "bytes": 100450856,
+      "files": 428
+    },
+    "runs/cafd": {
+      "bytes": 1688115935,
+      "files": 606
+    },
+    "scripts": {
+      "bytes": 113837,
+      "files": 65
+    },
+    "state/cafd": {
+      "bytes": 5253295,
+      "files": 1180
+    },
+    "tests": {
+      "bytes": 289572,
+      "files": 44
+    },
+    "tmp": {
+      "bytes": 55809584,
+      "files": 6333
+    }
+  },
+  "excluded_entries": 2113,
+  "excluded_regular_bytes": 1124624892820,
+  "missing_optional_roots": [],
+  "preservation": "Original paths/bytes; existing archives unchanged; temporary test records retained; symlinks indexed without following.",
+  "root": "/blue/du.j/jinjiaguo/CAFD",
+  "scope": [
+    "README.md",
+    "pyproject.toml",
+    ".gitignore",
+    ".gitmodules",
+    "cafd",
+    "configs",
+    "scripts",
+    "tests",
+    "experiments",
+    "docs",
+    "reports",
+    "artifacts",
+    "logs",
+    "data/cafd",
+    "runs/cafd",
+    "state/cafd",
+    "tmp",
+    "archive/cafd_invalid_48x16x8192"
+  ],
+  "source_bytes": 1929653192,
+  "source_files": 9163,
+  "started_at": "2026-09-08T23:34:39.284056+00:00",
+  "symlinks_recorded": 431
+}
